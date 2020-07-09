@@ -4,7 +4,7 @@ import WP from 'wpapi'
 
 const wpClient = new WP({
   // endpoint: 'http://testaccount.main.jp/ict-kids/wp-json'
-  endpoint: 'https://ict-kids.com/wp-json'
+  endpoint: 'http://matsuo449.wp.xdomain.jp/wp-json'
 })
 
 export default ({post}) => {
