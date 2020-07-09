@@ -8,8 +8,9 @@ const wpClient = new WP({
 
 const Home = (props) => {
   const { posts } = props
-  const { id } = posts
 
+  console.log(posts[0]);
+  
   
   return (
     <div className="container">
@@ -19,8 +20,8 @@ const Home = (props) => {
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className="">
+          新着記事
         </h1>
         <ul>
           {posts.map(post => (

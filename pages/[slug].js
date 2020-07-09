@@ -21,16 +21,8 @@ export default ({post}) => {
   )
 }
 
-export const getStaticProps = async ({params}) => {
-  const posts = await wpClient.posts().slug(params.slug)
-  return {
-      props: {
-          post: posts[0]
-      }
-  }
-}
-
-// ダイナミックルーティング時にも静的なファイルを生成
+// (1) SSG対象となるパスのリストを定義
+// SSGの対象にしたいパスを指定するのがgetStaticPathsの役目
 export const getStaticPaths = async () => {
   const posts = await wpClient.posts()
   return {
@@ -42,3 +34,15 @@ export const getStaticPaths = async () => {
       fallback: false
   }
 }
+
+// (2) 実際にSSGする関数
+// paramsには上記pathsで指定した値が入る（全件ではなく1postずつ）
+export const getStaticProps = async ({params}) => {
+  const posts = await wpClient.posts().slug(params.slug)
+  return {
+      props: {
+          post: posts[0]
+      }
+  }
+}
+
