@@ -3,7 +3,7 @@ import Link from 'next/link'
 import WP from 'wpapi'
 
 const wpClient = new WP({
-  endpoint: 'https://ict-kids.com/wp-json'
+  endpoint: 'http://testaccount.main.jp/ict-kids/wp-json'
 })
 
 const Home = (props) => {
