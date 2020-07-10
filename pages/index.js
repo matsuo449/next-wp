@@ -12,7 +12,7 @@ const wpClient = new WP({
 const Home = (props) => {
   const { posts } = props
 
-  // console.log(posts[0]);
+  console.log(posts[0]);
   
   
   return (
@@ -29,6 +29,7 @@ const Home = (props) => {
         <ul>
           {posts.map(post => (
             <li key={post.id}>
+              <img src={`${post.featured_image.src}`}/>
               <Link href="/[slug]" as={`/${post.slug}`}>
                 <a>
                   {post.title.rendered}
