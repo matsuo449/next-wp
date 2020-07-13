@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import '../styles/style.styl'
-import wp from './config';
+import wp from '../config';
 
 const Home = (props) => {
   const { posts,test } = props

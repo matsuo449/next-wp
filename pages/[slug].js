@@ -1,6 +1,6 @@
 // import axios from 'axios'
 import Link from 'next/link'
-import wp from './config'
+import wp from '../config'
 
 export default ({post}) => {
   return (
