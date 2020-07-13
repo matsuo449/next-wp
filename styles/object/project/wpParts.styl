@@ -1,0 +1,323 @@
+//content
+img.size-full
+  max-width 100%
+  height auto
+img.alignleft
+.wp-caption.alignleft
+  float left
+  margin 0 20px 40px 0
+img.alignright
+.wp-caption.alignright
+  float right
+  margin 0 0 40px 20px
+img.aligncenter
+.wp-caption.aligncenter
+  display block
+  margin 0 auto
+.gallery
+  .gallery-item
+    border none
+    margin 0
+    dt
+      background white
+      padding 10px
+    dd
+      font-size 1.4rem
+      padding 0 10px 40px
+    dt
+    dd
+      border none
+    img
+      width 100%
+      height auto
+.wp-caption
+  max-width 100% !important
+  height auto
+  .wp-caption-text
+    font-size 1.4rem
+    line-height 1.5
+
+//toc
+.main__contents__article
+  #toc_container
+    background-color c-xx-light
+    border none
+    margin 0 0 40px
+    padding 10px
+    width 100%
+    +mq()
+      padding 30px
+    .toc_title
+      border-bottom 1px solid c-medium
+      font-size 1.6rem
+      text-align left
+      margin 0 0 10px
+    li
+      font-size 1.6rem
+      line-height 1.4
+      margin 0 0 10px
+      +mq()
+        font-size 1.4rem
+      &:last-child
+        margin 0
+      ul
+        margin-top 5px
+    a
+      display inline
+      margin-bottom: 0
+      line-height: 1.6
+  #toc_container.no_bullets
+    ul
+      padding 0 0 0 1em
+      li
+        list-style-type disc
+        ul
+          margin 10px 0 20px 0
+          padding 0
+          +mq()
+            margin 5px 0 0 1em
+          li
+            list-style-type none
+
+//pager
+ul.page-numbers
+  display flex
+  flex-wrap nowrap
+  justify-content center
+  margin 40px 0 0
+  a
+    color c-txt
+    &:link,&:visited,&:active
+      color c-txt
+ul.page-numbers
+  li
+    width 40px
+    height 40px
+    margin 0 20px 0 0
+    &:last-child
+      margin 0
+    span
+    a
+      display block
+span.page-numbers
+a.page-numbers
+  line-height 40px
+  text-align center
+  vertical-align middle
+  background c-x-light
+span.page-numbers.current
+  color #fff
+  background-color c-key
+
+//contactform7
+.wpcf7
+  input[type="text"]
+  input[type="email"]
+  input[type="tel"]
+  input[type="url"]
+  textarea
+  select
+    background-color #fff
+    width 95%
+    border 1px solid c-medium
+    font-size 1.6rem
+    padding 1.5rem
+    border-radius 4px
+  select
+    height 33px
+  input[type="button"]
+  input[type="submit"]
+    background c-link
+    border none
+    border-radius 4px
+    box-shadow 0 4px 0 c-link-dark
+    color #fff
+    cursor pointer
+    display inline-block
+    font-size 1.6rem
+    font-weight bold
+    padding 1.25em 3em
+    text-decoration none
+    line-height 0
+    transition all 0.3s
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+    -webkit-appearance none
+    &:hover
+      opacity 0.8
+      transition all 0.3s
+  input[type="button"]
+    background c-medium
+    box-shadow 0 4px 0 c-dark
+span.wpcf7-list-item
+  display inline-block
+  font-size 1.6rem
+  margin-left 0 !important
+  // margin-right 1em
+  // margin-bottom 1em
+dl
+  dd
+    span.wpcf7-list-item
+      height 33px
+      vertical-align middle
+      label
+        vertical-align middle
+    span.wpcf7-list-item-label
+      margin-right 1em
+span.wpcf7-not-valid-tip
+  color c-red !important
+  margin 20px 0 0
+.your-name
+  input
+    margin-bottom: 20px
+.wpcf7
+  input.wpcf7c-conf
+  textarea.wpcf7c-conf
+    background-color c-xx-light
+    border none
+    &:-webkit-autofill
+      -webkit-box-shadow 0 0 0px 1000px c-xx-light inset
+      border none
+  select.wpcf7c-conf
+    background-color c-xx-light
+    border none
+    -webkit-appearance none
+    -moz-appearance none
+    appearance none
+    &::-ms-expand
+      display none
+div.wpcf7-mail-sent-ok
+div.wpcf7-mail-sent-ng
+div.wpcf7-spam-blocked
+div.wpcf7-validation-errors
+  border none !important
+div.wpcf7-response-output
+  background c-red-light
+  color c-red
+  padding 10px !important
+  text-align center
+
++below(w-tab)
+  img.alignleft
+    display block
+    float none
+    margin 0 0 40px
+  img.alignright
+    display block
+    float none
+    margin 0 0 40px
+  .wp-caption.alignleft
+  .wp-caption.alignright
+    display block
+    float none
+    margin 0 auto 40px
+    text-align center
+    width 100%
+    p
+      text-align left
+  ul.page-numbers
+    li
+      margin 0 15px 0 0
+  .wpcf7
+    input[type="text"]
+    input[type="email"]
+    input[type="tel"]
+    input[type="url"]
+    textarea
+    select
+      width 100%
+    input[type="button"]
+    input[type="submit"]
+      display block
+      margin 0 auto 20px
+      width 100%
+
+// 記事吹き出し
+$config-contentsBalloon
+  display flex
+  margin-bottom 30px
+  //justify-content flex-start
+
+$config-contentsBalloon__img
+  overflow hidden
+  border-width 2px
+  border-style solid
+  border-radius 50%
+  flex 0 0 70px
+  width 70px
+  height 70px
+  position relative
+  +below(w-tab)
+    flex 0 0 55px
+    width 55px
+    height 55px
+  & > img
+    width auto
+    max-width none !important
+    height 100% !important
+    position absolute
+    top -50%
+    right -50%
+    bottom: -50%
+    left -50%
+    margin auto
+
+$config-contentsBalloon__txt
+  flex 0 1 auto
+  padding 20px
+  position relative
+  border-radius 5px
+  word-break break-all
+  & > p
+    margin 0 !important
+  &:before
+    content ''
+    display block
+    border-width 13px 15px 13px 0
+    border-style solid
+    position absolute
+    top 20px
+  +below(w-tab)
+    &:before
+      border-width 6px 7.5px 6px 0
+
+.balloon--primary
+  @extend $config-contentsBalloon
+  &__img
+    @extends $config-contentsBalloon__img
+    border-color #f3c921
+  &__txt
+    @extend $config-contentsBalloon__txt
+    background-color #fff7d9
+    margin-left 35px
+    &:before
+      border-color transparent #fff7d9 transparent transparent
+      left -15px
+    +below(w-tab)
+      margin-left 18px
+      &:before
+        left -7.5px
+
+.balloon--secondary
+  @extend $config-contentsBalloon
+  flex-direction row-reverse
+  &__img
+    @extends $config-contentsBalloon__img
+    border-color #339cd1
+  &__txt
+    @extend $config-contentsBalloon__txt
+    background-color #def3fd
+    margin-right 35px
+    &:before
+      border-color transparent #def3fd transparent transparent
+      transform rotate(180deg)
+      right -15px
+    +below(w-tab)
+      margin-right 18px
+      &:before
+        right -7.5px
+.toc_list > li > ul > li > a
+  &:before
+    content "・"
+    color black
+    font-weight bold

@@ -1,0 +1,307 @@
+.main__contents
+  overflow-wrap break-word
+  word-wrap break-word
+.main__contents__cat
+  margin 0 0 20px
+.article__cat,
+.article__cat&:visited
+  background-color c-key
+  color #fff
+  display inline-block
+  font-size 1.1rem
+  height 22px
+  padding 5px 10px
+  position relative
+  &:after
+    content ''
+    border-style solid
+    border-color transparent
+    border-width 22px 14px 0 0
+    border-top-color c-key
+    position absolute
+    right -14px
+    top 0
+.main__contents__article__ttl
+  border-bottom 4px solid c-medium
+  font-size 2.4rem
+  font-weight bold
+  line-height 1.6
+  margin 0 0 20px
+  padding 0 0 10px
+.main__contents__article__meta
+  display flex
+  justify-content space-between
+  align-items center
+  font-size 1.4rem
+  margin 0 0 20px
+  .c-author__contents
+    span
+      padding 0 1rem 0 0
+      vertical-align middle
+  .c-date__contents
+    span
+      padding 0 2rem 0 0
+      vertical-align middle
+      &:last-child
+        padding 0
+.article__meta__avatar
+  display inline-block
+  img
+    border-radius 50%
+span.article__meta__pr
+  background c-key
+  color #fff
+  display inline-block
+  padding 2px 4px
+
+//wordpress投稿画面から投稿する記事内容のcss
+.main__contents__article
+  margin 40px 0 60px
+  line-height 1.6
+  h2
+    border-top 4px solid c-light
+    border-bottom 4px solid c-light
+    font-size 2.1rem
+    font-weight bold
+    padding 20px 0
+  h3
+    border-bottom 1px dashed c-light
+    font-size 1.8rem
+    font-weight bold
+    padding 0 0 10px
+  h4
+    border-left 4px solid c-light
+    font-size 1.6rem
+    font-weight bold
+    padding 0 0 0 10px
+  h5
+  h6
+    font-size 1.6rem
+    font-weight bold
+  h2
+  h3
+  h4
+  h5
+  h6
+    clear both
+    margin 40px 0
+  p
+    font-size 1.6rem
+    line-height 1.8
+    margin 0 0 40px
+  ul
+  ol
+    font-size 1.6rem
+    margin 0 0 40px 2em
+    li
+      margin 0 0 20px
+  ul
+    list-style-type disc
+  ol
+    list-style-type decimal
+  dl
+    border-top 1px solid c-x-light
+    margin 0 10px 40px
+  dt
+    background c-xx-light
+    font-weight bold
+  dt
+  dd
+    font-size 1.6rem
+    padding 0.5em 1em
+    ul
+      margin 0 0 0 1.5em
+      li
+        margin 0 0 0.5em
+        &:last-child
+          margin 0
+  strong
+    font-weight bold
+    background -webkit-linear-gradient(transparent 50%, c-key-light 30%);
+    background linear-gradient(transparent 50%, c-key-light 30%);
+  blockquote
+    background c-xx-light
+    padding 40px 30px
+    position relative
+    margin 0 0 40px
+    p
+      margin 0
+    &:before
+      content '“'
+      color c-light
+      font-size 7.0rem
+      line-height 1
+      position absolute
+      top 10px
+      left 10px
+  table
+    height auto !important
+    width 100% !important
+    border 1px solid c-light
+    border-collapse collapse
+    margin 0 0 40px
+    th
+      background c-xx-light
+      font-weight bold
+      text-align center
+    th
+    td
+      width auto !important
+      height auto !important
+      border 1px solid c-light
+      padding 0.75em
+  img
+    max-width 100%
+    height auto
+  .container--video
+    max-width 700px
+  .video
+    position relative
+    padding-bottom 56.25%
+    padding-top 30px
+    height 0
+    overflow hidden
+    max-width 100%
+    height auto
+  .video iframe
+  .video object
+  .video embed
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+  .u-txt--strong
+    background -webkit-linear-gradient(transparent 50%, c-key-light 30%);
+    background linear-gradient(transparent 50%, c-key-light 30%);
+  .u-txt--bold
+    font-weight bold
+  .u-txt--quoteSource
+    font-size 1.4rem
+    margin -20px 0 40px 2rem
+  .u-txt--l
+    font-size 2.6rem
+    font-weight: bold
+    line-height: 1.6
+
+  .u-link
+    font-weight bold
+    line-height 1.5
+    color #f5635f
+    font-size 1.8rem
+
+
+.article__catchImg
+  img
+    width 100%
+    height auto
+.main__contents__article__sponsorLink
+  text-align center
+  margin 0 0 40px
+.main__contents__article__sponsor
+  font-size 1.6rem
+  text-align right
+.list--snsShare
+  margin 0 0 40px
+.list--snsShare__item
+  display inline-block
+  margin 0 10px 0 0
+.btn--snsShare,
+.btn--snsShare&:visited
+  background-color #999
+  border-radius 4px
+  box-shadow 0 4px 0 rgba(130,130,130,1)
+  color #fff
+  display block
+  font-size 1.4rem
+  padding 0.5em 1em
+  text-decoration none
+  line-height 0
+  &:before
+    margin 0 0.25em 0 0
+.btn--snsShare.c-ico--facebook--02
+  background-color #27579c
+  box-shadow 0 3px 0 rgba(45,67,115,1)
+.btn--snsShare.c-ico--twitter--02
+  background-color #5ec0ed
+  box-shadow 0 3px 0 rgba(48,174,232,1)
+
+.main__contents__eventBnr
+  margin 0 auto 40px
+.main__contents__eventBnr--last
+  margin 40px auto 0
+
+.main__contents__relatedInfo
+  margin 0 0 40px
+.main__contents__relatedInfo_ttl
+  border-bottom 1px solid c-medium
+  font-size 1.8rem
+  font-weight bold
+  padding 0 0 10px
+  margin 0 0 20px
+.main__contents__relatedArticle
+  .main__contents__relatedInfo_ttl
+    margin 0
+  .side__list--thum__item
+    display inline-block
+    margin 0 20px 0 0
+    max-width 332px
+    width 47%
+    &:nth-child(2n)
+      margin 0
+    &:first-child
+      padding 20px 0
+      .side__list__txt
+        top 20px
+  .side__list--thum__item--secondary
+    @extend .side__list--thum__item
+    display inline-block
+    margin 0 20px 0 0
+    width 47%
+    &:nth-child(2n)
+      margin 0
+    &:first-child
+      padding 20px 0
+      .side__list__txt
+        top 20px
+    .side__list__img
+      background-size cover
+      background-position center
+      background-repeat repeat
+      display inline-block
+      height 60px
+      width 60px
+      margin 0 10px 0 0
+
+
++below(w-tab)
+  .main__contents__article__meta
+    font-size 1.2rem
+    flex-wrap wrap
+    flex-direction column-reverse
+  .c-author__contents
+    width 100%
+    padding 10px 15px
+    border 2px solid #DDDDDD
+  .c-date__contents
+    width 100%
+    display flex
+    align-items center
+    justify-content flex-end
+    margin-bottom 20px
+  .main__contents__article
+    table
+      font-size 1.2rem
+      th
+      td
+        padding 0.25em
+  .main__contents__relatedArticle
+    .main__contents__relatedInfo_ttl
+      margin 0 0 20px
+    .side__list--thum__item, .side__list--thum__item--secondary
+      margin 0
+      width 100%
+      &:first-child
+        padding 0 0 20px
+        .side__list__txt
+          top 0

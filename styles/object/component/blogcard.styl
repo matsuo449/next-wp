@@ -1,0 +1,52 @@
+.blog-card
+  border1px solid #ddd
+  word-wrap break-word
+  max-width 100%
+  border-radius 5px
+  margin-bottom 40px
+.blog-card:hover
+  background #d0ecfa
+.blog-card__link
+  display flex
+  text-decoration none
+.blog-card-title
+  color #337ab7
+  display block
+.blog-card-thumbnail
+  width 60px
+  height 60px
+  margin-right 14px
+  +below(w-tab)
+    width 80px
+    height 80px
+.blog-card-thumbnail img
+  display block
+  padding 0
+  transition 0.3s ease-in-out
+.blog-card-thumbnail + .blog-card-content
+  width calc(100% - 74px)
+  +below(w-tab)
+    width calc(100% - 94px)
+.blog-card-content
+  width 100%
+.main__contents__article .blog-card-content__txt
+  margin-bottom 5px
+  color #333
+.blog-card-content__arrow
+  color #999999
+.main__contents__article .blog-card-content__arrow__img
+  vertical-align middle
+  margin-right 5px
+  margin-top 4px
+  display inline-block
+  img
+    width 35px
+    height 20px
+.blog-card-title
+  font-size 1.6rem
+  color #3375d1
+  line-height 1.5em
+.blog-card-excerpt
+  color #333
+  margin 0 10px 10px
+  line-height 1.5em

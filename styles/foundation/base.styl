@@ -1,0 +1,48 @@
+global-reset()
+reset-html5()
+
+*
+  box-sizing border-box
+html
+  font-size 62.5%
+body
+  font-family 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
+  color c-txt
+  font-size 1.4rem
+  background-color #fff
+  -webkit-text-size-adjust 100%
+  position relative
+  min-height 100vh
+
+a
+  cursor pointer
+  color c-link
+  // transition: opacity .3s
+  &:link,&:active
+    text-decoration none
+  &:visited
+    color c-link-dark
+  &:focus
+  &:hover
+    text-decoration none
+    opacity: .7
+
+img
+  max-width 100%
+
+// .item--sp
+//   display block
+//   +mq-pc-l()
+//     display: none
+// .item--pc
+//   display: none
+//   +mq-pc-l()
+//     display: block
+
+
+// .item--pc-s
+//   display none
+//   +mq-pc-s()
+//       display block
+//   +mq-pc-l()
+//       display none

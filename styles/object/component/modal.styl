@@ -1,0 +1,275 @@
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+  // font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.modal__container
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  border-radius: 4px;
+  max-height 80vh
+  box-sizing: border-box;
+  background #fff
+  overflow auto
+  padding 30px
+  +below(w-pc)
+    width: calc(100% - 30px);
+    padding 15px
+.modal__container-secondary
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  border-radius: 4px;
+  max-height 90vh
+  box-sizing: border-box;
+  background #fff
+  overflow auto
+  padding 30px 100px
+  +below(w-pc)
+    width: calc(100% - 30px);
+    padding 15px
+.modal__header-secondary
+  margin-top 50px
+.modal__header {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}
+.modal__header__txt
+  text-align center
+  font-size 1.4rem
+  margin-bottom 40px
+  +below(w-tab)
+    font-size 1.2rem
+    margin-bottom 0
+.modal__close
+  padding 0
+  position absolute
+  right 30px
+  top 20px
+  background transparent
+  border 0
+  font-size 3rem
+  color #999999
+  outline none
+  cursor pointer
+.modal__header,
+.modal__header-secondary
+  .modal__close:before { content: "\2715"; }
+
+
+.modal__title {
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: #333333;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999999;
+}
+.modal__title-secondary
+  text-align center
+  margin-top 0
+  margin-bottom 55px
+  font-weight 600
+  font-size 3.2rem
+  line-height 1.25
+  color #333333
+  box-sizing border-box
+  +below(w-pc)
+    font-size 2.6rem
+    margin-bottom 18.5px
+  +mq-s()
+    font-size: 1.8rem
+.modal__content {
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+}
+
+.modal__btn {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #e6e6e6;
+  color: rgba(0,0,0,.8);
+  border-radius: .25rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
+  will-change: transform;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+
+.modal__btn:focus, .modal__btn:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.modal__btn-primary {
+  background-color: #00449e;
+  color: #fff;
+}
+.modalform__txt
+  text-align center
+  margin-top 20px
+
+
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+
+
+
+.modal__content__table
+  display flex
+  border-top 1px solid #d0d0d0
+  // border-bottom 1px solid #d0d0d0
+  margin-bottom 30px
+  flex-wrap wrap
+  +below(w-pc)
+    border-bottom none
+    border-top none
+.modal__content__table__ttl
+  font-size 1.6rem
+  color #333
+  background #f3f3f3
+  padding-left 20px
+  width 160px
+  display flex
+  align-items center
+  font-weight bold
+  border-bottom 1px solid #d0d0d0
+  +below(w-pc)
+    width 100%
+    color #339cd1
+    font-size 1.5rem
+    padding 15px
+    border-bottom none
+  &:last-child
+    border-bottom none
+.modal__content__table__contents
+  width calc(100% - 160px)
+  padding 20px
+  border-bottom 1px solid #d0d0d0
+  +below(w-pc)
+    width 100%
+    padding 20px 0 20px 0
+    border-bottom none
+.modal__content__input
+  width 300px
+  border-radius 5px
+  background #f3f3f3
+  padding 17px
+  font-size 1.6rem
+  border none
+  &::placeholder
+    color #999999
+  +below(w-pc)
+    width 100%
+.c-keyword__container
+  display flex
+  align-items center
+  margin-top 10px
+  +below(w-pc)
+    flex-wrap wrap
+    margin-top 20px
+#keywordList
+  margin-left 20px
+  display flex
+  align-items center
+  +below(w-pc)
+    width 100%
+    margin-top 20px
+    margin-left 0
+.keywordList__item
+  color #349cd2
+  font-size 1.4rem
+  margin-right 20px
+  cursor pointer
+  text-decoration underline
+  &:last-child
+    margin-right 0

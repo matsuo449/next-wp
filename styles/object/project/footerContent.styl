@@ -1,0 +1,178 @@
+footer
+  background-color c-key
+  color #fff
+  padding 40px 0 0
+.footer__copyright
+  background-color c-key-dark
+  font-size 1.2rem
+  margin auto
+  padding 16px 0
+  text-align center
+  +mq-s()
+    font-size 1rem
+.footer__info
+  display inline-block
+  font-size 1.2rem
+  line-height 1.6
+  margin 0 80px 0 0
+  width 340px
+  vertical-align top
+.footer__logo
+  display block
+  margin 0 0 20px
+  img
+    height 40px
+.footer__logo--txt
+.footer__logo--txt&:visited
+  font-size 2.8rem
+  font-weight bold
+  line-height 1.4
+  color white
+.footer__menu
+  display flex
+  justify-content space-between
+  width 600px
+.footer__menu__ttl
+  font-size 1.4rem
+footer
+  .list--snsLink
+    margin 20px 0 0
+  .list--snsLink__item
+    margin 0 14px 0 0
+    a,a&:visited
+      font-size 36px
+      height 36px
+      width 36px
+    .c-ico--facebook--01
+    .c-ico--twitter--01
+    .c-ico--feedly--01
+      color #fff
+.list--footer__item
+  margin 20px 0 0
+  a,a&:visited
+    color #fff
+    &:hover
+      span
+        text-decoration underline
+    &:before
+      font-size 1.2rem
+      margin 0 0.25em 0 0
+
++below(w-tab)
+  footer
+    padding 20px 0 0
+  .footer__info
+    display block
+    margin 0 auto 20px
+    width 90%
+    text-align center
+  .footer__menu
+    display block
+    width 100%
+    .footer__menu__ttl
+      font-size 1.8rem
+      padding 15px 0
+      text-align center
+  .footer__menu__box
+    border-top 1px solid #fff
+  .list--footer
+    border-top 1px solid #fff
+    display flex
+    flex-wrap wrap
+  .list--footer__item
+    border-bottom 1px solid #fff
+    font-size 1.1rem
+    line-height 1.6rem
+    margin 0
+    padding 15px 10px
+    width 50%
+    &:nth-child(2n+1)
+      border-right 1px solid #fff
+    &:last-child
+    &:nth-last-child(2)&:nth-child(odd)
+      border-bottom none
+  .footer__infoList
+    background c-key-dark
+    padding 22.5px 0
+    .footer__menu__ttl
+      display none
+    .list--footer
+      border-top none
+      display block
+      text-align center
+    .list--footer__item
+      border-bottom none
+      display inline-block
+      border-left 1px solid #fff
+      padding 0 15px
+      width auto
+      &:nth-child(2n+1)
+        border-right none
+      &:first-child
+        border-left none
+      a
+        &:before
+          content none
+  .footer__copyright
+    margin 0
+
+
+
+.footer__contact
+  padding: 25px 0
+  +mq()
+    display flex
+    justify-content space-between
+    align-items: center
+    max-width 1024px
+    margin 40px auto 0
+.footer__contact__box
+  +mq()
+    width: 50%
+
+.footer__contact__bar
+  +mq()
+    height: 100px
+    border-left: 1px solid #e0e0e0;
+
+.footer__contact__ttl
+  text-align: center
+  line-height: 1.8
+  font-size: 17px
+  +mq()
+    text-align: left
+    font-size: 17px
+.footer__contact__tel
+  margin: auto
+  max-width 280px
+  +mq()
+    margin: 0
+    max-width 500px
+    font-size: 35px
+    ._telArea__num__inner
+      justify-content: left
+      &:before
+        color: #ffffff
+
+.footer__contact__txt
+  display: flex
+  justify-content: center
+  align-items: baseline
+  +mq()
+    justify-content: left
+
+.footer__menu__box--secondary
+  display: block
+  border-top 1px solid #fff
+  background-color: c-key-dark
+  +mq()
+    border-top none
+    border-bottom: 1px solid #e0e0e0;
+.footer__menu__box--secondary.item--sp
+    display: block
+    +mq()
+      display: none
+.footer__menu__box--secondary.item--pc
+    display: none
+    +mq()
+      display: block

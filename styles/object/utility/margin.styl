@@ -1,0 +1,133 @@
+//pxで使う場合
+//for num in (1..50)
+//  .u-mt{num}
+//    margin-top: (num)px
+//for num in (1..50)
+//  .u-mb{num}
+//    margin-bottom: (num)px
+
+//baseを決めて使用する場合
+margin-base = 10px
+
+.u-mt--xxxl
+  margin-top (margin-base * 5.0)
+.u-mt--xxl
+  margin-top (margin-base * 4.0)
+.u-mt--xl
+  margin-top (margin-base * 3.0)
+.u-mt--l--ttl
+  margin-top (margin-base * 2.5)
+.u-mt--l
+  margin-top (margin-base * 2.5)
+.u-mt--m--btn
+  margin-top (margin-base * 2.0)
+.u-mt--m
+  margin-top (margin-base * 2.0)
+.u-mt--s
+  margin-top (margin-base * 1.5)
+.u-mt--s--table
+  margin-top (margin-base * 1.5)
+.u-mt--s--copyright
+  margin-top (margin-base * 1.5)
+.u-mt--xs
+  margin-top (margin-base * 1.0)
+.u-mt--xxs
+  margin-top (margin-base * 0.5)
+
+
+.u-mb--xxxl
+  margin-bottom (margin-base * 5.0)
+.u-mb--xxl
+  margin-bottom (margin-base * 4.0)
+.u-mb--xl
+  margin-bottom (margin-base * 3.0)
+.u-mb--l
+  margin-bottom (margin-base * 2.5)
+.u-mb--m
+  margin-bottom (margin-base * 2.0)
+.u-mb--s
+  margin-bottom (margin-base * 1.5)
+.u-mb--xs
+  margin-bottom (margin-base * 1.0)
+.u-mb--xxs
+  margin-bottom (margin-base * 0.5)
+
+.u-mr--xxs
+  margin-right (margin-base * 0.5)
+
++above(481px)
+  .u-mt--m--btn
+    margin-top 0
+
++above(641px)
+  .u-mt--l--ttl
+    margin-top 0
+
++above(801px)
+  .u-mt--xl
+    margin-top (margin-base * 5.0)
+  .u-mt--l
+    margin-top (margin-base * 4.5)
+  .u-mt--m
+    margin-top (margin-base * 3.5)
+  .u-mt--s
+    margin-top (margin-base * 2.0)
+  .u-mt--s--table
+    margin-top 0
+
+  .u-mb--l
+    margin-bottom (margin-base * 4.5)
+  .u-mb--m
+    margin-bottom (margin-base * 3.5)
+  .u-mb--s
+    margin-bottom (margin-base * 2.0)
+
++above(1001px)
+  .u-mt--s--copyright
+    margin-top 0
+
+
+// SP
+@media (max-width: 1024px)
+  .u-mb--xxxl-sp
+    margin-bottom (margin-base * 5.0)
+  .u-mb--xxl-sp
+    margin-bottom (margin-base * 4.0)
+  .u-mb--xl-sp
+    margin-bottom (margin-base * 3.0)
+  .u-mb--l-sp
+    margin-bottom (margin-base * 2.5)
+  .u-mb--m-sp
+    margin-bottom (margin-base * 2.0)
+  .u-mb--s-sp
+    margin-bottom (margin-base * 1.5)
+  .u-mb--xs-sp
+    margin-bottom (margin-base * 1.0)
+  .u-mb--xxs-sp
+    margin-bottom (margin-base * 0.5)
+
+// PC
+@media (min-width: 769px)
+  .u-mb--xxxl-pc
+    margin-bottom (margin-base * 5.0)
+  .u-mb--xxl-pc
+    margin-bottom (margin-base * 4.0)
+  .u-mb--xl-pc
+    margin-bottom (margin-base * 3.0)
+  .u-mb--l-pc
+    margin-bottom (margin-base * 2.5)
+  .u-mb--m-pc
+    margin-bottom (margin-base * 2.0)
+  .u-mb--s-pc
+    margin-bottom (margin-base * 1.5)
+  .u-mb--xs-pc
+    margin-bottom (margin-base * 1.0)
+  .u-mb--xxs-pc
+    margin-bottom (margin-base * 0.5)
+
+  .u-ml--xxl-pc
+    margin-left (margin-base * 4.0)
+
+  .u-mt--xs-pc
+    margin-top (margin-base * 1.0)
+

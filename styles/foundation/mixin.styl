@@ -1,0 +1,64 @@
+clearfix()
+  &:before,
+  &:after
+    content " "
+    display table
+  &:after
+    clear both
+placeholder()
+  &::-webkit-input-placeholder
+  &:-ms-input-placeholder
+  &::-moz-placeholder
+    {block}
+
+
+// 一方向のボックスシャドウ
+boxshadow(pos, color) {
+  if pos == top {
+    box-shadow 0 -5px 6px color
+  }
+  if pos == right {
+    box-shadow 5px 0 6px color
+  }
+  if pos == bottom {
+    box-shadow 0 5px 6px color
+  }
+  if pos == left {
+    box-shadow -5px 0 6px color
+  }
+}
+
+//media query
+//769px〜
+mq(){
+  @media screen and (min-width: 769px){
+    {block}
+  }
+}
+// 370〜
+mq-s(){
+  @media screen and (max-width: 370px){
+    {block}
+  }
+}
+
+// 769~1023
+mq-pc-s(){
+  @media screen and (min-width: 769px) and (max-width:1023px){
+    {block}
+  }
+}
+
+// 769~870
+mq-pc-xs(){
+  @media screen and (min-width: 769px) and (max-width:870px){
+    {block}
+  }
+}
+
+// 1024~
+mq-pc-l(){
+  @media screen and (min-width: 1024px){
+    {block}
+  }
+}

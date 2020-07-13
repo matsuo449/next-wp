@@ -1,0 +1,1006 @@
+#concierge
+  .wpcf7 input[type='text'], .wpcf7 input[type='email'], .wpcf7 input[type='tel'], .wpcf7 input[type='url'], .wpcf7 textarea, .wpcf7 select
+    +below(w-pc)
+      width 100%
+  .main__contents--single
+    +below(w-pc)
+      width 100%
+  .main__contents__form
+    +below(w-pc)
+      width 100%
+      // padding 40px 15px 20px
+      padding 40px 15px 60px
+  #form_a
+    margin-top 50px
+    +below(w-pc)
+      margin-top 0
+  .list--table
+    padding-top: 50px;
+    margin-top: -50px;
+    margin-bottom: 40px
+    +below(w-pc)
+      border-bottom none
+      padding-top: 30px;
+      margin-top: -30px;
+  .list--table__ttl
+    position relative
+    padding: 35px 30px 30px;
+    +below(w-pc)
+      width 100%
+      float none
+      padding 0
+      border-top none
+      margin 30px 0 15px 0
+  .list--table__detail
+    position relative
+    +below(w-pc)
+      padding 0
+      border-top none
+  .list--table__img
+    position absolute
+    right: 75px;
+    bottom: 40px;
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    background-color: #66CD66
+    +below(w-pc)
+      bottom: 10px
+      right: 20px
+    &:after
+      position: absolute;
+      display: block;
+      content: "";
+      width: 5px;
+      height: 10px;
+      top: 20%;
+      right: 8px;
+      border: solid 3px #ffffff;
+      border-left: 0;
+      border-top: 0;
+      transform:rotate(45deg)
+  .list--table__img--secondary
+    @extend .list--table__img
+    bottom: 60px
+    +below(w-pc)
+      bottom: 30px
+
+  .list--table__note
+    font-size: 14px
+    color: #333333
+    position: absolute
+    bottom: -20px;
+    width: 500px;
+    left: 0;
+    margin-left: 240px;
+    font-weight: normal
+    +below(w-pc)
+      bottom: -95px;
+      width: 100%
+      margin-left: 0
+  .wpcf7-form-control-wrap
+    +below(w-pc)
+      width 100%
+      display block
+  .wpcf7-form-control-wrap.zip_code
+    +below(w-pc)
+      width 60%
+  .wpcf7-checkbox
+    +below(w-pc)
+      width 100%
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+  .form__txtArea
+    +below(w-pc)
+      text-align left
+  .form__btnArea
+    +below(w-pc)
+      margin-bottom 0
+.concierge__content__inner
+  overflow hidden
+  margin 0 -20px
+  padding-bottom 100px
+  background #f3f3f3
+  +mq-pc-l()
+    margin: 0
+    padding-bottom 0
+.concierge__kv
+  background url(../img/concierge/pc_mv_pattern.png) 0 0 repeat
+  background-color #e8f6f7
+  width 100%
+  height 455px
+  display flex
+  flex-direction column
+  justify-content flex-end
+  margin 0px auto
+  background-size auto
+  // position relative
+  +below(w-tab)
+    height calc(100vw - 50px)
+    padding 0
+  +below(w-sp)
+    background-size contain
+    height auto
+    display block
+    background-position center center
+  &--secondary
+    width 100%
+    height auto
+    display block
+  &-tertiary
+    width 100%
+    background #fff25c
+.concierge__kv__inner
+  max-width 920px
+  width 100%
+  margin 0 auto
+  position relative
+  height 380px
+  +below(w-tab)
+    height auto
+    padding-top 20px
+  &--secondary
+    position relative
+    text-align center
+  &-tertiary
+    display flex
+    align-items center
+    flex-direction column
+    padding 80px 50px 60px
+    +below(w-tab)
+      padding 30px 15px
+.concierge__kv__bg
+  height 160px
+  background #339cd1
+.concierge__kv__inner__img
+  &--primary
+    position absolute
+    bottom -42%
+  &--secondary
+    vertical-align bottom
+    width 100%
+    max-width 1280px
+    source
+    img
+      width: 100%
+      max-width: 100%
+      height: auto
+      vertical-align: top
+      +mq-pc-l()
+        width: auto
+  &--text
+    width 100%
+    margin-top 10px
+    margin-bottom -10px
+    +mq-pc-l()
+      margin-bottom 40px
+.concierge__kv__inner__text
+  text-align center
+  margin-bottom 5px
+  color #fff
+  +below(w-pc)
+    left 11%
+  &-tertiary
+    text-align center
+    line-height 1.57
+    font-size 2.65rem
+    color #003f61
+    margin-bottom 10px
+    +below(w-pc)
+      font-size 1.9rem
+.concierge__section__qa
+  padding 40px 0 70px
+  text-align center
+  width 1040px
+  margin 0 auto
+  +below(w-pc)
+    width 100%
+    padding 15px
+  +below(w-sp)
+    padding 0 15px 50px
+    margin-top 40px
+.concierge__section__ttl
+  color #333333
+  font-size 3.2rem
+  text-align center
+  line-height 1.6
+  font-weight bold
+  margin-bottom 60px
+  &-tertiary
+    text-align center
+    .item--pc
+      display: none
+      +mq-pc-l()
+        display: inline
+  +below(w-pc)
+    margin-bottom 20px
+  +below(w-sp)
+    font-size 2.6rem
+    line-height 1.4
+.concierge__btn
+  background #fff
+  border-radius 30px
+  box-shadow 0 0 8px #cbcbcb
+  text-align center
+  border 3px solid #2b9bd4
+  +below(w-sp)
+    border-radius 50px
+  &:hover
+    cursor pointer
+.concierge__contact
+  padding 55px 0
+  text-align center
+  position relative
+  margin 0 auto 30px
+  background #339cd1
+  +below(w-pc)
+    padding 40px 0
+  +below(w-tab)
+    padding 40px 15px
+.concierge__contact__ttl
+  font-size 3.2rem
+  line-height 1.5
+  color #fff
+  font-weight bold
+  margin-bottom 50px
+.concierge__contact__box__ttl
+  font-size 1.6rem
+  color #fff
+  font-weight bold
+  position relative
+  +below(w-tab)
+    font-size 1.6rem
+    margin-bottom 20px
+  +below(w-sp)
+    font-size 1.2rem
+.concierge__contact__box__ttl:before
+  position absolute
+  content ''
+  display inline-block
+  width 12px
+  height 2px
+  background-color #fff
+  transform rotate(45deg)
+  margin 8px 0 0 -20px
+.concierge__contact__box__ttl:after
+  position absolute
+  content ''
+  display inline-block
+  width 12px
+  height 2px
+  background-color #fff
+  transform rotate(-45deg)
+  margin 8px 0 0 5px
+.concierge__contact__wrap
+  &--primary
+    position absolute
+    text-align center
+    bottom -37%
+    +below(w-tab)
+      bottom 5%
+      left 50%
+      transform translateX(-50%)
+      width 100%
+  &--secondary
+    top 0%
+    left 50%
+    width 100%
+    position absolute
+    // top 10%
+    // left 30%
+    transform translateX(-50%)
+    +mq-pc-l()
+      top 10%
+      left 30%
+.concierge__contact__box__column
+  margin-top 30px
+  display flex
+  justify-content center
+.concierge__contact__box__btn
+  font-size 2.2rem
+  font-weight bold
+  +below(w-pc)
+    margin 0
+    left 25%
+  +below(w-tab)
+    font-size 1.8rem
+    left 50%
+  &:hover
+    cursor pointer
+  &--headerLp a
+    color #fff
+    padding 13px 30px
+    border #fff solid 3px
+    background-color #ff8a00
+    border-radius 30px
+    box-shadow:0px 5px 12px 0px rgba(0,0,0,0.18)
+    font-size 1.8rem
+    &:before
+      margin-right 13px
+      +below(w-pc)
+        margin-right 0
+    +below(w-pc)
+      font-size 1rem
+      display flex
+      flex-wrap wrap
+      justify-content center
+      width 44px
+      height 44px
+      padding 5px
+      border-radius 2px
+      box-shadow none
+      border none
+      box-sizing border-box
+      align-items: center;
+  &--secondary
+    font-size 2.2rem
+    // position absolute
+    font-weight bold
+    &:hover
+      cursor pointer
+    a
+      color #fff
+      padding 13px 80px
+      border #fff solid 3px
+      background-color #ff8a00
+      border-radius 30px
+      box-shadow:0px 5px 12px 0px rgba(0,0,0,0.18)
+      +below(w-tab)
+        display inline-block
+        padding 17px 30px
+        width 90%
+        border-radius 40px
+      +below(w-sp-xs)
+        padding 10px 30px
+  &-tertiary
+    position relative
+    // max-width 600px
+    // width 100%
+    +below(w-tab)
+      width 100%
+    &:hover
+      cursor pointer
+    a
+      width: 100%;
+      min-width: 600px;
+      margin: 0 auto;
+      display inline-block
+      font-size 3rem
+      text-align center
+      color #fff
+      padding 25px
+      border #fff solid 4px
+      background-image linear-gradient(to top, #fd564b, #ff7328)
+      border-radius 40px
+      box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      text-shadow 0px 1px 0 rgba(253, 87, 74, 0.5)
+      +below(w-tab)
+        font-size 2rem
+        padding 20px
+        min-width 100%
+        border-radius 40px
+      +below(w-sp-xs)
+        font-size 1.5rem
+.concierge__contact__box__btn a
+  display inline-block
+  color #fff
+  padding 13px 80px
+  border #fff solid 3px
+  background-color #ff8a00
+  border-radius 30px
+  box-shadow:0px 5px 12px 0px rgba(0,0,0,0.18)
+  +below(w-tab)
+    padding 17px 30px
+    width 90%
+    border-radius 40px
+  +below(w-sp-xs)
+    padding 10px 30px
+.concierge__content__wrap
+  margin 0 auto
+  background #ffffff
+  padding 80px 20px 40px
+  &-tertiary
+    &-yellow
+      padding-top 100px
+      padding-bottom 100px
+      background #f5f1c3
+      +below(w-pc)
+        padding 60px 15px
+    &-white
+      padding-top 100px
+      padding-bottom 100px
+      background #fff
+      +below(w-pc)
+        padding 60px 15px
+.concierge__section__item__ttl
+    margin-top 20px
+    position relative
+  +below(w-pc)
+    margin-left 20px
+.concierge__section__item__ttl h3
+  color #339cd1
+  font-size 1.9rem
+  font-weight bold
+.ttl__deco
+  height 1px
+  width 30px
+  border-top 1px solid #339cd1
+  position absolute
+  top 0%
+  left -8%
+  +below(w-tab)
+    top 0%
+    left -12%
+.concierge__section__item
+  display flex
+  align-items center
+  justify-content center
+  flex-wrap: wrap
+  margin 30px auto
+  +mq-pc-l()
+    max-width 1080px
+.concierge__section__item__text
+  width 100%
+  margin-left 0
+  margin-right 0
+  +mq-pc-l()
+    width calc(100% / 2)
+    margin-left 3em
+    margin-right 3em
+.concierge__section__item__desc
+  color #333
+  margin-top 20px
+  line-height 1.5
+.concierge__subsection
+  margin-top 30px
+.concierge__section--flow
+  padding 70px 0 70px
+  text-align center
+  position relative
+  margin 0 auto
+  +below(w-pc)
+    padding 40px 0 0
+.concierge__section--flow__section
+  width 100%
+  max-width 1040px
+  margin 0 auto
+  display flex
+  justify-content space-between
+  position relative
+  +below(w-pc)
+    flex-direction column
+    padding 30px 15px 30px 0
+  +below(w-tab)
+    width 100%
+.flowline-pc
+  display block
+  position absolute
+  top 20px
+  left 50%
+  transform translateX(-50%)
+  z-index 3
+  +below(w-pc)
+    display none
+.flowline-sp
+  display none
+  +below(w-pc)
+    display block
+    height 310px
+    position absolute
+    top: 63px;
+    left: 20px;
+    transform none
+    z-index 3
+.concierge__section--flow__section__box
+  background-color #fff
+  border-radius 10px
+  width 340px
+  padding 20px
+  position relative
+  overflow hidden
+  &:nth-of-type(1)
+    background-image url(../img/concierge/pc_flow_1.png)
+    background-repeat no-repeat
+    background-position right 25px bottom -1px
+    +below(w-pc)
+      background-image url(../img/concierge/sp_flow_1.png)
+      background-position right 25px bottom -1px
+      background-size: 30px 95px;
+  &:nth-of-type(2)
+    background-image url(../img/concierge/pc_flow_2.png)
+    background-repeat no-repeat
+    background-position right 24px bottom -1px
+    +below(w-pc)
+      background-image url(../img/concierge/sp_flow_2.png)
+      background-position right 12px bottom -1px
+      background-size: 58px 95px;
+  &:nth-of-type(3)
+    background-image url(../img/concierge/pc_flow_3.png)
+    background-repeat no-repeat
+    background-position right 24px bottom -1px
+    +below(w-pc)
+      background-image url(../img/concierge/sp_flow_3.png)
+      background-position right 12px bottom -1px
+      background-size: 62px 95px;
+  +below(w-pc)
+    width 100%
+    height 127.5px
+    margin-bottom 20px
+    padding 0 20px 0 60px
+    text-align left
+    border-radius 0 10px 10px 0
+
+
+.section__box__ttl
+  color #339cd1
+  font-weight bold
+  font-size 2.2rem
+  line-height 1.6
+  margin 25px 0
+  +below(w-pc)
+    font-size 1.9rem
+    margin 25px 0 5px 0
+.section__box__txt
+  text-align left
+  font-size 1.6rem
+  line-height 1.5
+  position relative
+  z-index 2
+  +below(w-pc)
+    font-size 1.5rem
+.main__contents__codomonForm__ttl
+  color #333333
+  font-weight bold
+  font-size 3.0rem
+  margin-bottom 5rem
+  text-align center
+  +below(w-pc)
+    font-size 2.6rem
+    line-height 1.5
+    span
+      margin 0 0 60px
+.main__contents__conciergeForm__ttl
+  color #333333
+  font-weight bold
+  font-size 3.0rem
+  // margin 70px auto 40px
+  text-align center
+  margin-bottom: 40px
+  +below(w-pc)
+    font-size 2.6rem
+    line-height 1.5
+    span
+      margin 0 0 60px
+
+#form_b
+  .wpcf7-response-output
+    margin 2em 0.5em 0em
+    line-height: 1.3
+    padding 10px !important
+    text-align left
+    +mq()
+      padding 20px !important
+
+.main__contents__conciergeForm__error-list
+  display: flex
+  flex-direction: column
+  margin: 0 0.5em 1em;
+  color: #bf0a55;
+  background: #e9d1db;
+  text-decoration: underline
+  &:empty
+    margin: 0
+  & a
+    color: #bf0a55;
+
+.main__contents__conciergeForm__error-list__item
+  padding: 10px
+  text-decoration: underline
+  cursor: pointer
+  z-index: 2
+  +mq()
+    margin: 10px
+.concierge__btn--detail
+  display block
+  width 80%
+  margin 0 auto 50px
+  padding 18px
+  position relative
+  +below(w-pc)
+    font-weight bold
+    padding 7px 10px
+    width 100%
+.concierge__btn--detail__inner
+  display inline-block
+  font-size 1.8rem
+  line-height 1.5
+  color #339cd1
+  +below(w-sp)
+    font-size 1.5rem
+    line-height 1.5
+    .item--sp
+      display inline-block
+  img
+    position absolute
+    top 50%
+    transform: translateY(-50%)
+    right 30px
+    vertical-align middle
+.concierge__btn--detail__arrow
+  margin 0 0 0 20px
+  width 20px
+.main__contents__form
+  max-width 1040px
+  margin 0 auto
+  background #fff
+  padding 80px 100px 40px
+.c-ico--arrow--u:before
+  z-index 3
++below(w-tab)
+  .concierge__contact__box__column
+    flex-direction column
+  .concierge__contact--tel__img
+    margin 20px 0 0
+  .concierge__contact__ttl
+    font-size 2.1rem
+    margin-bottom 40px
+  .concierge__contact__box
+    flex-wrap wrap
+  .voice__section
+    width 92%
+    margin 0 auto
+    display block
+  .voice__section__box
+    width 100%
+  .voice__section__box:first-child
+    margin 0 0 40px 0
+  .concierge__section--flow__ttl
+    font-size 2.3rem
+    margin-bottom 70px
+
++below(w-sp)
+  .main__contents--concierge
+    width 100%
+  .concierge__contact:before,.concierge__contact:after,.concierge__section--flow:before,.concierge__section--flow:after
+    height 39px
+    top -39px
+  .concierge__contact--form__img
+    height 18px
+    width auto
+  .section__box__ttl--step01,.section__box__ttl--step02,.section__box__ttl--step03
+    margin 15px 0
+  .section__box__ttl--step01:before,.section__box__ttl--step02:before,.section__box__ttl--step03:before
+    margin 0 auto 15px
+  .section__box__txt
+    text-align left
+  .concierge__section--triple__boxInner
+      h2
+        border-bottom 2px dashed c-brown
+        padding 0 0 20px
+      p
+        font-size 1.4rem
+  .main__contents__form
+    width 92%
+  .concierge__btn--detail__txt
+    width 80%
+  .concierge__btn--detail__arrow
+    margin 0 0 0 5%
+    width 5%
+.codomonformDetail
+  .list--table
+    border none
+    margin 20px auto
+    .list--table__detail
+      padding-top 0
+      padding-bottom 0
+      border none
+    .list--table__ttl
+      width 260px
+      padding 10px 20px 10px
+// なんかフォームを新規作成した
+.p-negative__block
+  max-width 1080px
+  width 100%
+  margin 0 auto
+.p-negative__block__lists
+  display flex
+  flex-wrap wrap
+  max-width none
+  list-style none
+  justify-content center
+  position relative
+  margin 25px auto 50px
+  +below(w-pc)
+    margin 0 auto 50px auto
+  &:before
+    position absolute
+    content ""
+    width 100%
+    max-width 1040px
+    height 219px
+    border 4px solid #fff25c
+    top 115px
+    right -50%
+    left -50%
+    margin 0 auto
+    +below(w-pc)
+      height: 650px
+.p-negative__block__lists__item
+  flex 1 0 25%
+  max-width 220px
+  min-height 0
+  margin-top 60px
+  text-align center
+  +below(w-pc)
+    min-width 50%
+    flex 1 0 50%
+.p-negative__block__lists__item a
+  color #333
+  font-size 1.8rem
+  transition: opacity .3s linear
+  &:hover
+    cursor pointer
+    opacity .7
+.p-negative__block__lists__item a > div
+  border-radius 50%
+  height 120px
+  width 120px
+  background #fff
+  position relative
+  margin-left auto
+  margin-right auto
+  margin-bottom 15px
+  box-shadow 0 0 8px 0 rgba(0, 0, 0, 0.2)
+  svg
+    position absolute
+    top 50%
+    left 50%
+    transform translateY(-50%) translateX(-50%)
+    width 60px
+    height 60px
+    fill #153F5E
+.circle_num
+  position absolute
+  top 0
+  left -10px
+  font-size 3rem
+  font-weight bold
+  color #ff607b
+.p-concierge__cardLists
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  width 1040px
+  margin 0 auto
+  +below(w-pc)
+    width 100%
+.p-concierge__cardList__item
+  width 240px
+  background #fff
+  border-radius 10px
+  box-shadow 0 2px 5px #ccc
+  margin-top 50px
+  +below(w-pc)
+    width 48%
+    margin-top 25px
+.p-concierge__cardList__item__header
+  position relative
+  padding 20px
+  background #003f61
+  border-radius 10px 10px 0 0
+  +below(w-pc)
+    padding 15px
+  +below(w-sp-xs)
+    padding 8px
+.p-concierge__cardList__item__header_num
+  font-size 2.4rem
+  font-weight bold
+  color #ff607b
+  display inline-block
+  margin-right 15px
+  +below(w-pc)
+    font-size 1.7rem
+  +below(w-sp-xs)
+    font-size 1.5rem
+    margin-right 5px
+.p-concierge__cardList__item__header p
+  font-size 2.4rem
+  text-align left
+  color #fff
+  +below(w-pc)
+    font-size 1.7rem
+  +below(w-sp-xs)
+    font-size 1.5rem
+.p-concierge__cardList__item__content
+  padding 25px
+  +below(w-pc)
+    padding 15px
+.p-concierge__cardList__item__content__svg
+  display block
+  width 85px
+  height 85px
+  margin-left auto
+  margin-right auto
+  margin-bottom 10px
+  fill #003f61
+.p-concierge__cardList__item__content__txt
+  font-size 1.6rem
+  line-height 1.81
+.c-fukidashi
+  position relative
+  display inline-block
+  padding 20px
+  border-radius 10px
+  background #003f61
+  font-size 2.8rem
+  font-family "Noto Sans Japanese", sans-serif
+  color #fff
+  margin-bottom 25px
+  +below(w-tab)
+    width 100%
+    font-size 1.9rem
+    text-align center
+    margin-bottom 10px
+  +below(w-sp-xs)
+    font-size 1.5rem
+    padding 10px
+  &:before
+    content ""
+    position absolute
+    top 100%
+    left 50%
+    margin-left -15px
+    border 15px solid transparent
+    border-top 15px solid #003f61
+.concierge__kv__inner-tertiary-lefttext
+  text-align left
+  padding-left 8px
+  +below(w-tab)
+    font-size 1.1rem
+.concierge__kv__inner__contents
+  margin-bottom 35px
+.btn__catchText
+  position absolute
+  top -50px
+  right -50px
+  pointer-events none
+  +below(w-tab)
+    width 225px
+    right 0
+    top -20px
+.concierge__card-row
+  max-width 1040px
+  width 100%
+  margin-right auto
+  margin-left auto
+  margin-top 80px
+  margin-bottom 100px
+  display flex
+  border-radius 10px
+  box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.2)
+  +below(w-tab)
+    width 100%
+    flex-wrap wrap
+    margin-top 0
+    margin-bottom 40px
+    &:first-of-type
+      margin-top 60px
+  &:last-child
+    margin-bottom 0
+.concierge__card-image
+  max-width 420px
+  width 100%
+  +below(w-tab)
+    max-width 100%
+    width 100%
+    position relative
+  img
+    display block
+    vertical-align bottom
+    border-radius 10px 0 0 10px
+    object-fit contain
+    +below(w-pc)
+      width 100%
+      height 100%
+      object-fit cover
+    +below(w-tab)
+      border-radius 10px 10px 0 0
+.concierge__card-contents
+  width calc(100% - 420px)
+  padding 45px
+  +below(w-pc)
+    width 100%
+    padding 30px 20px
+.concierge__card-contents__ttl
+  display flex
+  align-items center
+  margin-bottom 30px
+  h2
+    line-height 1.6
+    font-size 2.4rem
+    color #111
+    margin-left 25px
+    +below(w-pc)
+      margin-left 0
+.concierge__card-contents__txt
+  color #333333
+  font-size 1.6rem
+  line-height 1.8
+
+// エラー時の背景色変更
+#concierge
+  .list--table__form__required
+    .wpcf7-form-control-wrap
+      input[type="text"].wpcf7-not-valid,input[type="tel"].wpcf7-not-valid
+        background: #FFDDDD
+        border: 1px solid #CB0100;
+    .wpcf7-not-valid
+      input
+        background: #FFDDDD
+        border: 1px solid #CB0100;
+    label.error
+      display: none !important
+
+// 残数カウンター
+.remaining-number-counter
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #FFDDDD
+  width:100%
+  height: 60px
+  padding: 0 40px
+  +mq()
+    justify-content: space-between
+    width: 240px
+.remaining-number-counter__txt
+  font-size: 16px
+  font-weight: bold
+  color: #333333
+  padding-right: 20px
+  +mq()
+    padding-right: 0
+.remaining-number-counter__num
+  display: flex
+  align-items: baseline
+  color: #CA0300
+
+
+// メールアドレスドメイン補完機能
+/* 各リスト項目のパディング設定 */
+.ui-menu .ui-menu-item-wrapper
+  padding: 1.5rem
+
+.ui-menu-item
+  background: #ffffff;
+
+
+/* リスト全体の背景 */
+.ui-widget-content
+  border: 1px solid #DDDDDD
+  background: #ffffff;
+  border-top: none
+  color: #333333;
+  width: 50%
+  border-radius: 0 0 4px 4px
+  +mq()
+    width: 500px
+/* リスト hover 時のカラー */
+.ui-state-active
+  font-weight: bold;
+  background: #f3f3f3;
+
+.ui-autocomplete
+  max-height: 130px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 20px;
+  +mq()
+    max-height: 230px;
+
+#jquery-ui-autocomplete label
+  float: left;
+  margin-right: 0.5em;
+  color: black;
+  font-size: 15px;

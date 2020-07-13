@@ -1,0 +1,198 @@
+.side__section__ttl
+  border-bottom 1px c-medium solid
+  font-size 1.8rem
+  font-weight bold
+  line-height 2.4rem
+  margin 0 0 20px
+  padding 0 0 10px 0
+.side__section
+  margin 0 0 40px
+  & > ins
+    margin: 6px auto 0
+.side__contents--top
+  .side__section__bnrList
+    margin 30px 0 0
+.side__section__bnrList__item
+  margin 0 0 20px
+  &:last-child
+    margin 0
+  a
+    display block
+    text-align center
+  & .c-sponsorTxt
+    margin-top 38px
+  & > ins
+    margin-top 6px
+.side__section__bnrList__item.side__bnrList__item--btn
+  margin 0 0 26px
+.list--border--dashed__item
+  padding 20px 0
+  border-bottom 1px c-light dashed
+  &:first-child
+    padding 0 0 20px
+  a
+    color c-txt
+    &:link,&:visited,&:active
+      color c-txt
+    &:hover
+      text-decoration underline
+.side__more
+  margin 20px 0 0
+  text-align right
+  a
+    color c-txt
+    &:link,&:visited,&:active
+      color c-txt
+    &:hover
+      span
+        text-decoration underline
+  .c-ico--arrow--r
+    &:before
+      color c-light
+      font-size 1.3rem
+      margin 0 0.25em 0 0
+.side__list--thum__item
+  padding 20px 0
+  position relative
+  border-bottom 1px c-light dashed
+  &:first-child
+    padding 0 0 20px
+    .side__list__txt
+      top 0
+  a
+    color c-txt
+    &:link,&:visited,&:active
+      color c-txt
+    &:hover
+      .side__article__ttl__txt
+        text-decoration underline
+
+  a.newArticleList__cat
+    color: #ffffff
+.side__list__img
+  background-size cover
+  background-position center
+  background-repeat repeat
+  display inline-block
+  height 60px
+  width 60px
+  margin 0 10px 0 0
+.side__list__txt
+  display inline-block
+  position absolute
+  top 20px
+  left 80px
+.side__article__ttl
+  font-size 1.2rem
+  font-weight bold
+  line-height 1.6
+.side__article__ttl--secondary
+  font-size: 1.4rem
+  font-weight bold
+  line-height 1.6
+  display: -webkit-box
+  overflow: hidden
+  word-wrap: break-word
+  word-break: break-all
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 2
+  +mq()
+    font-size 1.8rem
+.side__article__meta__pr
+  font-size 1rem
+  background c-medium
+  color #fff
+  margin 0 0 0 5px
+  padding 2px
+  vertical-align 2px
+.side__ranking
+  counter-increment rankingnumber
+  position relative
+  &:before
+    content counter(rankingnumber)
+    color #fff
+    font-size 1.2rem
+    position absolute
+    top 23px
+    left 5px
+    z-index 5
+  &:first-child
+    &:before
+      top 3px
+  .side__list__img
+    position relative
+    &:before
+      content ''
+      border-style solid
+      border-color transparent
+      border-width 30px 30px 0 0
+      border-top-color c-key
+      position absolute
+      top 0
+      left 0
+.list--snsLink
+  margin 0 0 20px
+.list--snsLink__item
+  display inline-block
+  margin 0 16px 0 0
+  a
+    content ''
+    display block
+    font-size 48px
+    height 48px
+    width 48px
+.c-ico--facebook--01,
+.c-ico--facebook--01&:visited
+  color #27579c
+.c-ico--twitter--01,
+.c-ico--twitter--01&:visited
+  color #5ec0ed
+.c-ico--feedly--01,
+.c-ico--feedly--01&:visited
+  color #6bbb55
+.bnr--inquiry
+  display block
+  line-height 1
+  img
+    height auto
+    width 300px
+.ga--event
+  cursor pointer
+
++below(w-tab)
+  .side__contents--top
+    .side__section__bnrList
+      margin 0
+  .side__section__bnrList__item.side__bnrList__item--btn
+    margin 0 0 23px
+  .side__section__bnrList__item
+    & > ins
+      display: block
+      margin: 0 auto !important
+    & .c-sponsorTxt
+      margin-bottom: 6px
+  .side__more
+    a
+      background c-x-light
+      border-radius 4px
+      box-shadow 0 2px 0 c-light
+      display block
+      padding 10px
+      text-align center
+      .c-ico--arrow--r
+        &:before
+          color c-medium
+  .side__list__img
+    height 80px
+    width 80px
+  .side__list__txt
+    left 90px
+  .side__article__ttl
+    font-size 1.4rem
+    line-height 1.4
+  .bnr--inquiry
+    img
+      height auto
+      width 100%
+  .section--ga--sp
+    text-align center

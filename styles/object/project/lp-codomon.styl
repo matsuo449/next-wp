@@ -1,0 +1,974 @@
+#codomon
+  .wpcf7 input[type='text'], .wpcf7 input[type='email'], .wpcf7 input[type='tel'], .wpcf7 input[type='url'], .wpcf7 textarea, .wpcf7 select
+    +below(w-pc)
+      width 100%
+  .main__contents--single
+    +below(w-pc)
+      width 100%
+  .main__contents__form
+    +below(w-pc)
+      width 100%
+      padding: 40px 15px 20px;
+  .list--table
+    +below(w-pc)
+      border-bottom none
+  .list--table__ttl
+    +below(w-pc)
+      width 100%
+      float none
+      padding 0
+      border-top none
+      margin 30px 0 15px 0
+  .list--table__detail
+    +below(w-pc)
+      padding 0
+      border-top none
+  .wpcf7-form-control-wrap
+    +below(w-pc)
+      width 100%
+      display block
+  .wpcf7-form-control-wrap.zip_code
+    +below(w-pc)
+      width 60%
+  .wpcf7-checkbox
+    +below(w-pc)
+      width 100%
+      display block
+  .form__txtArea
+    +below(w-pc)
+      text-align left
+  .form__btnArea
+    +below(w-pc)
+      margin-bottom 0
+.codomon__content__inner
+  width 100%
+  overflow hidden
+  margin 0 auto
+  padding-bottom 100px
+  background #ffffff
+  +below(w-pc)
+    padding-bottom 0
+.codomon__kv
+  background-color #ffffff
+  width 100%
+  padding-top 30px
+  margin 0 auto
+  // +below(w-pc)
+  +below(w-tab)
+    height auto
+    padding-top 0px
+  +below(w-sp)
+    background-size contain
+    height auto
+.codomon__kv__inner
+  max-width 1040px
+  width 100%
+  margin 0 auto
+  +below(w-tab)
+    padding 30px 30px 0 30px
+.codomon__kv__inner__img
+  width 100%
+.codomon__section__qa
+  padding 40px 0 70px
+  text-align center
+  width 1040px
+  margin 0 auto
+  +below(w-pc)
+    width 100%
+    padding 15px
+  +below(w-sp)
+    padding 0 15px 50px
+.codomon__section__qa__blue
+  padding 40px 0 70px
+  text-align center
+  width 1040px
+  margin 0 auto
+  +below(w-pc)
+    width 100%
+    padding 15px
+  +below(w-sp)
+    padding 0 15px 50px
+
+// 吹き出し
+h2.bubble
+  width: 73px;
+  height: 24px;
+  font-size: 28px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: 1
+  letter-spacing: 1.12px
+  text-align: center
+  color: #01a2c1
+// セクションタイトル
+.codomon__section__ttl2
+  color #333333
+  font-size 40px
+  text-align center
+  line-height 1.23
+  font-weight bold
+  margin-bottom 60px
+  margin-top 100px
+  +below(w-pc)
+    font-size 2.9rem
+    margin-top 50px
+    margin-bottom 20px
+  +below(w-sp)
+    font-size 2.6rem
+    line-height 1.4
+.codomon__section__ttl
+  color #333333
+  font-size 40px
+  text-align center
+  line-height 1.23
+  font-weight bold
+  margin-bottom 47px
+  margin-top 100px
+  padding-top 70px
+  +below(w-pc)
+    margin-top 20px
+    margin-bottom 20px
+  +below(w-sp)
+    font-size 2.6rem
+    line-height 1.4
+.codomon__section__ttl--primary
+  color #333333
+  font-size 40px
+  text-align center
+  line-height 1.23
+  font-weight bold
+  margin-bottom 47px
+  margin-top 50px
+  padding-top 70px
+  +below(w-pc)
+    margin-bottom 20px
+  +below(w-sp)
+    font-size 2.6rem
+    line-height 1.4
+
+// コンタクト
+.codomon__btn
+  background #fff
+  border-radius 30px
+  box-shadow 0 0 8px #cbcbcb
+  text-align center
+  border: 3px solid #2b9bd4;
+  +below(w-sp)
+    border-radius 50px
+  &:hover
+    cursor pointer
+.codomon__contact
+  padding 53px 0
+  text-align center
+  position relative
+  margin 50px auto 0px
+  background #01a2c1
+  +below(w-pc)
+    padding 40px 0
+  +below(w-tab)
+    padding 40px 15px
+    margin: 0px
+.codomon__contact__ttl
+  font-size 3.2rem
+  line-height 1.5
+  color #fff
+  font-weight bold
+  margin-bottom 50px
+.codomon__contact__box__ttl
+  font-size 1.6rem
+  color #fff
+  font-weight bold
+  position relative
+  +below(w-tab)
+    font-size 1.6rem
+    margin-bottom 20px
+  +below(w-sp)
+    font-size 1.2rem
+.codomon__contact__box__ttl:before
+  position absolute
+  content ''
+  display inline-block
+  width 12px
+  height 2px
+  background-color #fff
+  transform rotate(45deg)
+  margin 8px 0 0 -20px
+.codomon__contact__box__ttl:after
+  position absolute
+  content ''
+  display inline-block
+  width 12px
+  height 2px
+  background-color #fff
+  transform rotate(-45deg)
+  margin 8px 0 0 5px
+.codomon__contact__box__column
+  display flex
+  justify-content center
+.codomon__contact__box__btn
+  font-size 2.2rem
+  position relative
+  font-weight bold
+  display flex
+  align-items center
+  justify-content center
+  vertical-align middle
+  +below(w-pc)
+    margin 0
+  +below(w-tab)
+    font-size 1.8rem
+  &:hover
+    cursor pointer
+.codomon__contact__box__btn a
+  color #fff
+  padding 13px 80px
+  border #fff solid 3px
+  background-color #ff8a00
+  border-radius 30px
+  box-shadow:0px 5px 12px 0px rgba(0,0,0,0.18)
+  +below(w-tab)
+    padding 17px 10px
+    width 100%
+    border-radius 40px
+
+// 導入の流れ、フロー
+.codomon__section--flow
+  padding 40px 0 70px
+  text-align center
+  position relative
+  margin 0 auto
+  +below(w-pc)
+    padding 40px 0 0
+.codomon__section--flow__section
+  width 100%
+  max-width 1040px
+  margin 0 auto
+  display flex
+  justify-content space-between
+  position relative
+  +below(w-pc)
+    flex-direction column
+    padding 30px 15px 30px 0
+  +below(w-tab)
+    width 100%
+.flowline-pc
+  display block
+  position absolute
+  top 20px
+  left 50%
+  transform translateX(-50%)
+  z-index 3
+  +below(w-pc)
+    display none
+.flowline-sp
+  display none
+  +below(w-pc)
+    display block
+    height 310px
+    position absolute
+    top: 63px;
+    left: 20px;
+    transform none
+    z-index 3
+.codomon__section--flow__section__box
+  background-color #fff
+  border-radius 10px
+  width 340px
+  padding 20px
+  position relative
+  overflow hidden
+  &:nth-of-type(1)
+    background-image url(../img/codomon/pc_flow_1.png)
+    background-repeat no-repeat
+    background-position right 25px bottom -1px
+    +below(w-pc)
+      background-image url(../img/codomon/sp_flow_1.png)
+      background-position right 25px bottom -1px
+      background-size: 30px 95px;
+  &:nth-of-type(2)
+    background-image url(../img/codomon/pc_flow_2.png)
+    background-repeat no-repeat
+    background-position right 24px bottom -1px
+    +below(w-pc)
+      background-image url(../img/codomon/sp_flow_2.png)
+      background-position right 12px bottom -1px
+      background-size: 58px 95px;
+  &:nth-of-type(3)
+    background-image url(../img/codomon/pc_flow_3.png)
+    background-repeat no-repeat
+    background-position right 24px bottom -1px
+    +below(w-pc)
+      background-image url(../img/codomon/sp_flow_3.png)
+      background-position right 12px bottom -1px
+      background-size: 62px 95px;
+  +below(w-pc)
+    width 100%
+    height 127.5px
+    margin-bottom 20px
+    padding 0 20px 0 60px
+    text-align left
+    border-radius 0 10px 10px 0
+.lp__codomon__block__blue
+  width 100%
+  background #e8f6f8
+  text-align center
+  padding-bottom 90px
+.section_header
+  position relative
+.bubble_img
+  background-image url(../img/lp-codomon/balloon_heading.png)
+  background-size cover
+  position absolute
+  left 50%
+  transform: translateX(-50%)
+  display flex
+  align-items center
+  justify-content center
+  top -20px
+  width 125px
+  height 80px
+span.bubble
+  font-size 24px
+  font-weight bold
+  letter-spacing 1.12px
+  color #01a2c1
+  padding-bottom 10px
+//おすすめポイント、カード
+.codomon__section__qa__inner
+  display flex
+  justify-content space-between
+  +below(w-pc)
+    flex-wrap wrap
+.card__content
+  border 2px solid #01a2c1
+  border-radius 20px
+  width calc(100% / 3 - 13px)
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.18);
+  +below(w-pc)
+    width 100%
+    margin-bottom 30px
+.card__content__img img
+  border-radius 20px 20px 0 0
+  +below(w-pc)
+    min-width 100%
+.card__content__inner
+  padding 40px 30px
+  +below(w-pc)
+    padding 15px
+.card__content__inner__title
+  display flex
+  align-items center
+.card__content__inner__title h3
+  text-align left
+  font-weight bold
+  font-size 21px
+  letter-spacing 0.22px
+  line-height 1.42
+  font-stretch normal
+  +below(w-pc)
+    width calc(100% - 86px)
+    font-size 2.63rem
+.card__content__inner__title img
+  width: 60px;
+  height: 60px;
+.card__content__inner__title br
+  +between(0,w-sp-xs)
+    display none
+.card_title_img
+  display flex
+  align-items center
+  justify-content center
+  font-size 3rem
+  font-weight bold
+  color #ffffff
+  margin: 0 10px 0 0
+  background-image url(../img/lp-codomon/icon_point.png)
+  background-size cover
+  width 60px
+  height 60px
+  vertical-align center
+  +below(w-pc)
+    width 70px
+    height 70px
+    margin-right 16px
+.card__content__inner__text
+  margin-top 30px
+  position: relative
+.card__content__inner__text li
+  text-align left
+  list-style-type disc
+  margin-left 1em
+  margin-bottom 10px
+  font-size 16.5px
+  font-weight 500
+  color #333333
+  line-height 1.6
+  letter-spacing normal
+  font-stretch normal
+  &:last-child
+    margin-bottom 0
+.card__arrow
+  position absolute
+  left 50%
+  transform translate(-50%,50%)
+  img
+    height 37px
+  +below(w-pc)
+    transform translate(-50%,0%)
+.card__content__footer
+  height 111px
+  display flex
+  justify-content center
+  align-items center
+  padding 20px
+  font-size 24px
+  font-weight bold
+  background-color: #ffcc3320;
+  position relative
+.card__content__footer h3
+  font-size 24px
+  color: #01a2c1;
+.card__content__footer span
+  color: #01a2c1;
+  font-size 14px
+.footer__star01
+  position absolute
+  left 10%
+  top 10%
+  width 22px
+  height 20px
+  +between(0,w-sp-xs)
+    left 5%
+    top 15%
+.footer__star01.first__card
+  +between(0,w-sp-xs)
+    left 4%
+    top 5%
+.footer__star02
+  position absolute
+  width 22px
+  height 20px
+  left 80%
+  bottom 20%
+  +between(0,w-sp-xs)
+    left 87%
+.lp__codomon__service__list
+  display flex
+  justify-content center
+  +below(w-pc)
+    flex-direction column
+.lp__codomon__service__list__item
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  width 290px
+  background #e8f6f8
+  border-radius 10px
+  +below(w-pc)
+    width 100%
+    margin-bottom 35px
+    &:last-child
+      margin-bottom 0
+.lp__codomon__service__list__item--center
+  @extend .lp__codomon__service__list__item
+  margin-left 70px
+  margin-right 70px
+  +below(w-pc)
+    margin-left 0
+    margin-right 0
+  img
+    margin-left 25px
+.lp__codomon__service__list__item__ttl
+  font-size 2.4rem
+  font-weight bold
+  color #01a2c1
+  margin-bottom 20px
+.lp__codomon__service__list__item__txt
+  font-size 1.6rem
+  color #333
+  line-height 1.66
+  text-align center
+.service_item
+  display flex
+  align-items center
+  justify-content center
+  background white
+  border-radius: 50%
+  width: 180px
+  height: 180px
+  margin-bottom 10px
+  +below(w-pc)
+    margin-bottom 20px
+    width 138px
+    height 138px
+  img
+    width 60%
+  .service_item--centerimg
+    margin-left 25px
+//料金プラン 基本
+.lp-plan
+  max-width 940px
+  width 100%
+  margin 0 auto
+  padding 40px
+  text-align center
+  display flex
+  flex-wrap wrap
+  justify-content flex-start
+  border 2px solid #01a2c1
+  border-radius 20px
+  +below(w-pc)
+    padding 20px
+.lp_plan_basic_header
+  display flex
+  align-items center
+  margin-bottom 40px
+  width 100%
+  +below(w-pc)
+    flex-wrap wrap
+.lp__plan__basic__title
+  font-size 24px
+  font-weight bold
+  width: 300px;
+  border-radius: 30px;
+  background-color: #01a2c1;
+  padding 20px
+  color white
+  margin-right 20px
+  +below(w-pc)
+    padding 10px
+    width 100%
+    margin 0 0 20px 0
+.lp__plan__basic__fee
+  width calc(100% - 320px)
+  font-size 40px
+  font-weight bold
+  color #ff6666
+  text-align left
+  +below(w-pc)
+    width 100%
+    text-align center
+ //料金プラン オプション
+ .lp-plan_op
+  max-width 940px
+  width 100%
+  margin 0 auto
+  padding 40px
+  text-align center
+  display flex
+  flex-wrap wrap
+  justify-content flex-start
+  border 2px dashed #01a2c1
+  border-radius 20px
+  +below(w-pc)
+    border none
+    padding 0 30px
+    margin-bottom 88px
+.lp_plan_op_header
+  display flex
+  align-items center
+  margin-bottom 40px
+  width 100%
+  +below(w-pc)
+    flex-direction column
+    margin-bottom 20px
+.lp__plan__op__title
+  font-size 24px
+  font-weight bold
+  width: 300px;
+  border solid 2px #01a2c1
+  border-radius: 30px;
+  background-color: white
+  padding 20px
+  color #01a2c1
+  margin-right 20px
+  +below(w-pc)
+    padding 10px
+    margin 0 0 20px 0
+    width 100%
+.lp__plan__op__fee
+  width calc(100% - 320px)
+  font-size 40px
+  color #000000
+  text-align left
+  +below(w-pc)
+    width 100%
+    text-align center
+.lp__plan__op
+  display flex
+  flex-wrap wrap
+  justify-content flex-start
+.lp__plan__op__item
+  list-style disc
+  text-align left
+  font-size 20px
+  font-weight 500
+  letter-spacing: 0.8px
+  width calc(50% - 1em)
+  color: #333333
+  +below(w-pc)
+    width 100%
+  span.item--pc
+    display inline
+    +below(w-pc)
+      display none
+  span.item--sp
+    display none
+    +below(w-pc)
+      display inline
+    +between(0,w-sp-xs)
+      display none
+  span.item--sp--xs
+    display none
+    +between(0,w-sp-xs)
+      display inline
+
+//十字
+.lp_codomonn_cross
+  text-align center
+  margin 30px 0
+.cross
+  line-height  1
+  font-size 60px
+  font-weight bold
+  color #707070
+.lp__codomon__ttl
+  margin-bottom 90px
+  h2
+    font-size 40x
+    font-weight bold
+    position relative
+    display inline-block
+		&:before
+      content ''
+      position absolute
+      bottom -30px
+      display inline-block
+      width 60px
+      height 5px
+      left 50%
+      -webkit-transform translateX(-50%)
+      transform translateX(-50%)
+      background-color $blue
+      border-radius 6px
+.lp__plan__basic
+  display flex
+  flex-wrap wrap
+  align-items center
+  justify-content space-between
+  align-content space-around
+  +between(0,w-sp-xs)
+    padding-right 7px
+  &:after
+    content ""
+    width 30%
+    display block
+    +below(w-pc)
+      display none
+.fee_color
+  font-size 2.8rem
+  color #ff6666
+.fee_month
+  font-size 2.8rem
+  color #333
+  display inline-block
+.lp__plan__basic__item
+  display flex
+  flex-wrap nowrap
+  align-items center
+  white-space nowrap
+  width 30%
+  font-size: 24.5px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.35;
+  letter-spacing: 0.98px;
+  text-align: left;
+  color: #333333;
+  +below(w-pc)
+    font-size 1.4rem
+    width 50%
+.lp__plan__basic__item img
+  width 32px
+  height 23px
+  margin-right 10px
+  +below(w-pc)
+    width 16.5px
+    height 11.5px
+  +between(0,w-sp-xs)
+    margin-right 5px
+.lp__codomon__block__white
+.lp__codomon__block__noPadding
+  width 100%
+  background #ffffff
+  text-align center
+  +below(w-pc)
+    padding 0 15px
+.lp__plan__op ul
+  display flex
+  justify-content space-between
+.lp__plan__op__item
+  line-height 2.5
+  margin-left 1em
+  +below(w-pc)
+    font-size 1.4rem
+.lp__plan__op__item li
+  width calc(100% / 2 - 13px)
+
+//導入までの流れ
+.lp__plan__flow
+  max-width 940px
+  margin 0 auto
+.lp__plan__flow__inner
+  position relative
+  padding 40px 0
+  display flex
+  align-items center
+  border-top 2px dashed #01a2c1
+  &:last-child
+    border-bottom 2px dashed #01a2c1
+  +below(w-pc)
+    padding 30px 15px
+    margin-left 15px
+    margin-right 15px
+    flex-wrap wrap
+  +between(0,w-sp-xs)
+    padding 20px 0
+.lp__plan__flow__num
+  font-size 23px
+  font-weight: bold
+  color white
+.lp__plan__flow__title
+  text-align left
+  width 170px
+  line-height 1.3
+  br.item--sp
+    display block
+    +below(w-pc)
+      display none
+  +below(w-pc)
+    width calc(100% - 75px)
+.plan__arrow
+  position absolute
+  left 50%
+  bottom -33px
+  transform translate(-50%)
+  +below(w-pc)
+    bottom -22px
+    transform translate(-50%)
+.plan__arrow img
+  width 60px
+  height 31px
+  +below(w-pc)
+    width 39px
+    height 19.5px
+.lp__plan__flow__title h3
+  font-size: 24px
+  font-weight: bold
+  +below(w-pc)
+    font-size 2rem
+  +between(0,w-sp-xs)
+    font-size 1.8rem
+.lp__plan__flow__title.last
+  color: #01a2c1;
+.lp__plan__flow__text
+  font-size: 16px;
+  font-weight: 500;
+  +below(w-pc)
+    width 100%
+    margin-top 10px
+    text-align left
+    line-height 1.63
+.lp__item__img
+  width: 130px
+  padding 17px
+  margin-right 30px
+  text-align: center
+  background-image url(../img/lp-codomon/icon_flow.png)
+  background-size cover
+  +below(w-pc)
+    width 65px
+    padding 7.5px
+    margin-right 10px
+.lp__item__img h3
+  font-size 2.4rem
+  +below(w-pc)
+    font-size 1.2rem
+.section__box__ttl
+  color #339cd1
+  font-weight bold
+  font-size 2.2rem
+  line-height 1.6
+  margin 25px 0
+  +below(w-pc)
+    font-size 1.9rem
+    margin 25px 0 5px 0
+.section__box__txt
+  text-align left
+  font-size 1.6rem
+  line-height 1.5
+  position relative
+  z-index 2
+  +below(w-pc)
+    font-size 1.5rem
+.main__contents__codomonForm__ttl
+  color #333333
+  font-weight bold
+  font-size 3.0rem
+  // margin 70px auto 40px
+  text-align center
+  +below(w-pc)
+    font-size 2.6rem
+    line-height 1.5
+    span
+      margin 0 0 60px
+.codomon__btn--detail
+  display block
+  width 80%
+  margin 0 auto 50px
+  padding 18px
+  position relative
+  +below(w-pc)
+    padding 7px 10px
+    width 100%
+.codomon__btn--detail__inner
+  display inline-block
+  font-size 1.8rem
+  line-height 1.5
+  color #339cd1
+  +below(w-sp)
+    font-size 1.5rem
+    line-height 1.5
+    .item--sp
+      display inline-block
+  img
+    position absolute
+    top 50%
+    transform: translateY(-50%)
+    right 30px
+    vertical-align middle
+.codomon__btn--detail__arrow
+  margin 0 0 0 20px
+  width 20px
+.main__contents__form
+  max-width 1040px
+  margin 0 auto
+  background #fff
+  padding 80px 100px 40px
+.c-ico--arrow--u:before
+  z-index 3
++below(w-tab)
+  .codomon__contact__box__column
+    flex-direction column
+  .codomon__contact--tel__img
+    margin 20px 0 0
+  .codomon__contact__ttl
+    font-size 2.1rem
+    margin-bottom 40px
+  .codomon__contact__box
+    flex-wrap wrap
+  .voice__section
+    width 92%
+    margin 0 auto
+    display block
+  .voice__section__box
+    width 100%
+  .voice__section__box:first-child
+    margin 0 0 40px 0
+  .codomon__section--flow__ttl
+    font-size 2.3rem
+    margin-bottom 70px
+
++below(w-sp)
+  .codomon__content__inner
+    width 100%
+  .main__contents--codomon
+    width 100%
+  .codomon__contact:before,.codomon__contact:after,.codomon__section--flow:before,.codomon__section--flow:after
+    height 39px
+    top -39px
+  .codomon__contact--form__img
+    height 18px
+    width auto
+  .section__box__ttl--step01,.section__box__ttl--step02,.section__box__ttl--step03
+    margin 15px 0
+  .section__box__ttl--step01:before,.section__box__ttl--step02:before,.section__box__ttl--step03:before
+    margin 0 auto 15px
+  .section__box__txt
+    text-align left
+  .codomon__section--triple__boxInner
+      h2
+        border-bottom 2px dashed c-brown
+        padding 0 0 20px
+      p
+        font-size 1.4rem
+  .main__contents__form
+    width 92%
+  .codomon__btn--detail__txt
+    width 80%
+  .codomon__btn--detail__arrow
+    margin 0 0 0 5%
+    width 5%
+.fixbanner--pc
+  position fixed
+  right: 30px
+  bottom: 2px
+  width 260px
+  background-color #f3c81f
+  border-radius 20px
+  text-align center
+  z-index: 1
+  +below(w-sp)
+    display none
+.fixbanner--sp
+  position fixed
+  bottom 0px
+  width 100%
+  background-color #f3c81f
+  text-align center
+  display none
+  +below(w-sp)
+    display block
+    opacity 0
+    transition 0.3s ease-in-out
+    transform translateY(78px)
+    &.is-active
+      opacity 1
+      transform translateY(0px)
+.banner__inner
+  padding 35px 30px
+  position relative
+  +below(w-sp)
+    display flex
+    justify-content space-around
+    align-items center
+    padding 15px
+.banner__inner__txt
+  color #ff6666
+  font-size 1.8rem
+  font-weight bold
+  margin-top 15px
+  display inline-block
+  text-shadow: 2px 2px 1px #fff,
+             -2px 2px 1px #fff,
+             2px -2px 1px #fff,
+             -2px -2px 1px #fff;
+  &:before
+    font-size 2.3rem
+    vertical-align -4px
+    margin-right 2px
+    display inline-block
+.banner__inner__ttl
+  color #333
+  font-size 1.8rem
+  font-weight bold
+  // text-shadow 1px 1px 0#ffffff
+  text-shadow: 2px 2px 1px #fff,
+             -2px 2px 1px #fff,
+             2px -2px 1px #fff,
+             -2px -2px 1px #fff;
+
+

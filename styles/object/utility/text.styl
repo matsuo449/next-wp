@@ -1,0 +1,105 @@
+//pxで使う場合
+for num in (8..100)
+  .u-fs{num}
+    font-size : (num)px
+// SP
+@media (max-width: 768px)
+  for num in (8..100)
+    .u-fs{num}-sp
+      font-size : (num)px
+// SP 370以下
+@media (max-width: 371px)
+  for num in (8..100)
+    .u-fs{num}-sp-s
+      font-size : (num)px
+
+// PC
+@media (min-width: 769px)
+  for num in (8..100)
+    .u-fs{num}-pc
+      font-size : (num)px
+//1024以下
+@media (min-width: 769px) and (max-width:1024px)
+  for num in (8..100)
+    .u-fs{num}-pc-s
+      font-size : (num)px
+
+//remで使用する場合
+//font-size
+.u-fs--xxxl
+  font-size 3.0rem
+.u-fs--xxl
+  font-size 2.8rem
+.u-fs--xxl--btn
+  font-size 2.8rem
+.u-fs--xl
+  font-size 2.4rem
+.u-fs--l--btn
+  font-size 2.0rem
+.u-fs--l
+  font-size 2.0rem
+.u-fs--m--table
+  font-size 1.8rem
+.u-fs--m
+  font-size 1.8rem
+.u-fs--s
+  font-size 1.5rem
+.u-fs--xs
+  font-size 1.3rem
+
+//line-height
+.u-lh--xxl--ttl
+  line-height 3.5rem
+.u-lh--l
+  line-height 2.8rem
+.u-lh--m--table
+  line-height 2.4rem
+.u-lh--m
+  line-height 2.4rem
+.u-lh--s
+  line-height 2.0rem
+
+//font-weight
+.u-fwb
+  font-weight bold
+
+//text-align
+.u-txtl
+  text-align left
+.u-txtc
+  text-align center
+
+// marker
+.u-marker--blue
+  background linear-gradient(transparent 60%, #c4f2fb 60%)
+.u-marker--yellow
+  background linear-gradient(transparent 60%, #ffe60f 60%)
+.u-underLine
+  text-decoration underline
++above(801px)
+  //font-size
+  .u-fs--xxl
+    font-size 2.4rem
+  .u-fs--xxl--btn
+    font-size 2.4rem
+  .u-fs--l--btn
+    font-size 1.8rem
+  .u-fs--m--table
+    font-size 1.8rem
+  .u-fs--m
+    font-size 1.6rem
+  .u-fs--s
+    font-size 1.4rem
+
+  //line-height
+  .u-lh--m--table
+    line-height 3.0rem
+
+//spのみ改行
+@media (min-width: 769px)
+  .u-sp--br
+    display none
+//pcのみ改行
+@media (max-width: 768px)
+  .u-pc--br
+    display none

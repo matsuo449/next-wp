@@ -1,19 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import WP from 'wpapi'
-
-const wpClient = new WP({
-  // endpoint: 'http://testaccount.main.jp/ict-kids/wp-json'
-  // endpoint: 'http://matsuo449.wp.xdomain.jp/wp-json'
-  //ICTキッズ（AWS WP）の記事データを取得
-  endpoint: 'http://3.92.3.206/wp-json'
-})
+import '../styles/style.styl'
+import wp from './config';
 
 const Home = (props) => {
-  const { posts } = props
+  const { posts,test } = props
 
-  console.log(posts[0]);
-  
+  console.log(test);
+
+  // console.log(posts[0]);
   
   return (
     <div className="container">
@@ -23,7 +18,7 @@ const Home = (props) => {
       </Head>
 
       <main>
-        <h1 className="">
+        <h1 className="test">
           新着記事
         </h1>
         <ul>
@@ -44,10 +39,20 @@ const Home = (props) => {
 }
 
 export const getStaticProps = async () => {
-  const data = await wpClient.posts()
+  //投稿
+  const posts = await wp.posts()
+  //固定ページ
+  const pages = await wp.pages()
+  //カテゴリー取得
+  const categories = await wp.categories()
+  //特定のカテゴリー20個取得
+  const test = await wp.posts().categories(561).perPage(20)
   return {
     props: {
-      posts: data
+      posts,
+      pages,
+      categories,
+      test
     }
   }
 }

@@ -1,0 +1,87 @@
+.link--concierge--bottom
+  margin 40px 0
+.link--concierge--twoBlock
+  margin 40px 0
+  display flex
+  justify-content space-around
+  & > ins
+    margin-top 6px
+.link--concierge--bottom--sp.item--sp
+  img
+    display none
+.link--concierge--bottom--sp__box
+  display none
++below(w-tab)
+  .link--concierge--bottom--sp.item--sp
+    // background url(../img/common/footer-concierge/bg-footer-concierge.png) center bottom no-repeat
+    padding 0
+    z-index 20
+    img
+      vertical-align bottom
+      display inline-block
+  .link--concierge--bottom--sp__box
+    display flex
+    align-items center
+    justify-content space-between
+    &.is-hidden
+      display none
+    &--secondary
+      @extend .link--concierge--bottom--sp__box
+      flex-wrap wrap
+      text-align center
+      font-size 1.8rem
+      font-weight bold
+      margin 5px
+      border-radius 10px
+      box-shadow 0px 2px 4px 0 rgba(0, 0, 0, 0.25)
+      .link--concierge--bottom--sp__box--secondary__ttl
+        width 100%
+        background #339cd1
+        padding 10px
+        color #fff
+        border-radius 2.5px 2.5px 0 0
+      .link--concierge--bottom--sp__box--secondary__tel
+        width 50%
+        position relative
+        a
+          display block
+          padding 15px
+          background #fff
+          color #3a9dcf
+          border-radius 0 0 0 2.5px
+          span.link--concierge--bottom--sp__box--secondary__tel__inner
+            &:before
+              flex 0 1 auto
+              font-family icomoon
+              display inline-block
+              content "\e901"
+              margin-right 10px
+      .link--concierge--bottom--sp__box--secondary__mail
+        width 50%
+        position relative
+        a
+          display block
+          padding 15px
+          background #ff8a00
+          color #fff
+          border-radius 0 0 2.5px 0
+          span.link--concierge--bottom--sp__box--secondary__mail__inner
+            &:before
+              flex 0 1 auto
+              font-family icomoon
+              display inline-block
+              content "\e900"
+              margin-right 10px
+  .link--concierge--bottom--sp__btnArea
+    padding 0
+    vertical-align middle
+  .link--concierge--bottom--sp__btnArea__event
+    padding 0
+    vertical-align middle
+  .link--concierge--bottom--sp__btnArea__ttl
+    margin 0 0 5px
+  .link--concierge--bottom--sp__btn--form
+    margin 0 5px 0 0
++below(w-sp-xs)
+  .link--concierge--bottom--sp__box--secondary
+    font-size 1.4rem

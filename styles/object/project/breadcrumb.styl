@@ -1,0 +1,23 @@
+.breadcrumb
+  border-bottom 1px solid c-light
+  width 100%
+.breadcrumb__list
+  margin 0 auto
+  padding 14px 0
+  max-width w-pc
+  width: 100%
+.breadcrumb__list__item
+  display inline
+  line-height 1.5
+  &:after
+    content '>'
+    padding 0 0.5em
+  &:last-child
+    &:after
+      content ''
+  a
+    color c-txt
+    &:link,&:visited,&:active
+      color c-txt
+    &:hover
+      text-decoration underline

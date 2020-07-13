@@ -1,0 +1,275 @@
+//menu
+[data-trigger-menu]
+  &.is-close
+    &:before
+      content "\e902"
+  &.is-open
+    &:before
+      content "\e903"
+[data-target-menu-pc]
+  &.is-close
+    opacity 0
+    visibility hidden
+  &.is-open
+    opacity 1
+    visibility visible
+
+[data-trigger-submenu]
+  [data-target-submenu]
+    visibility hidden
+    opacity 0
+    transition all ease-in-out 0.2s
+  &:hover
+    [data-target-submenu]
+      visibility visible
+      opacity 1
+
+// pc header
+[data-target-header]
+  +mq-pc-l()
+    position fixed
+    height 80px
+    &.header--lp
+      height 90px
+    &.is-fixed
+      position fixed
+      height 80px
+      .header__logo,
+      .search__area
+        display none
+      &.header--lp
+        height 90px
+&.is-fixed.header--lp
+  position fixed
+.head-animation
+  transform translateY(-100%)
+// sp toggle menu
+[data-target-toggle='spmenu']
+  max-height 0
+  overflow hidden
+  transition max-height ease-in-out 0.7s
+  &.is-open
+    max-height 500px
+//pursose list
+[data-target-toggle="purposesList"]
+  max-height 250px
+  overflow hidden
+  transition max-height ease-in-out 0.7s
+  &.is-open
+    max-height 900px
+[data-trigger-toggle="purposesTrigger"]
+  &.is-open
+    &.purpose__more
+      margin-bottom: 0
+    .purpose__more__svg,.purpose__txt
+      display: none
+
++below(w-pc)
+  [data-trigger-menu]
+  [data-trigger-menu-sp]
+    &.is-open
+      &:before
+        color c-key
+    &.is-disabled
+      position fixed
+      z-index 10
+  [data-target-menu-sp]
+    &.is-close
+      visibility hidden
+      position absolute
+      top 0
+      left -300px
+      min-height 100vh
+      width 0
+    &.is-open
+      visibility visible
+      left 0
+      width 295px
+  [data-trigger-search-sp]
+    &.is-open
+      display none
+    &.is-disabled
+      position fixed
+      z-index 10
+  [data-target-search-sp]
+    &.is-close
+      display none
+    &.is-open
+      display block
+      position fixed
+      z-index 200
+  [data-target-headerbtn-sp]
+    &.is-open
+      position fixed
+  [data-target-modal-sp]
+    &.is-open
+      position fixed
+      z-index 50
+      top 0
+      left 0
+      width 100%
+      height 120%
+      background-color rgba(0,0,0,.75)
+
+//pagetop
+[data-trigger-pagetop]
+  &.is-absolute
+    position absolute
+    bottom -80px
+    left -50%
+    right -50%
+    margin 0 auto
+  &.is-fixed
+    position fixed
+    bottom 0
+    left -50%
+    right -50%
+    margin 0 auto
+
+// 相談ページ用
+[data-trigger-counter]
+  &.is-absolute
+    position absolute
+    bottom 0px
+    +mq()
+      right: 20px
+  &.is-fixed
+    position: fixed
+    z-index: 3
+    bottom: 0
+    +mq()
+      bottom: 20px
+      right: 20px
+
+.footer__conciergeform[data-trigger-pagetop]
+  &.is-fixed
+    z-index 1
+    position fixed
+    bottom 40px
+    left -50%
+    right -50%
+    margin 0 auto
+    pointer-events:none
+    +mq()
+      bottom 80px
+
+.footer__conciergeform__btn
+  pointer-events auto
+
+// conciergebnr
+.link--concierge--bottom--sp
+  transition: .2s all ease 0s
+  width 90%
+  margin 0 auto
+  // position fixed
+  bottom 0
+  left 0
+  right 0
+  &.is-absolute
+    position absolute
+    bottom -100px
+  &.is-fixed
+    position fixed
+    bottom 80px
+    left 0
+    right 0
+    z-index 999999
+  &.is-bottom
+    transition: .2s all ease 0s
+    position fixed
+    bottom 0
+    left 0
+    right 0
+    z-index 999999
+.link--concierge--bottom--sp__box
+  position relative
+  .box__close
+    display flex
+    align-items center
+    justify-content center
+    position absolute
+    right 0px
+    top -35px
+    height 35px
+    width 35px
+    background #000
+    border 0
+    font-size 2rem
+    color #ffffff
+    outline none
+    cursor pointer
+    &:before
+      content "\2715"
+// inquiry
+[data-trigger-formdetail]
+  &.is-open
+  &.is-close
+    transition all 0.25s linear
+  &.is-open
+    .concierge__btn--detail__arrow
+      transform rotate(180deg)
+[data-target-formdetail]
+  &.is-close
+    display none
+input[type="submit"]
+  &.is-disabled
+    opacity 0.5
+    cursor default
+    &:hover
+      opacity 0.5
+
+.fixbanner--pc
+  &.is-close
+    display none
+
+[data-fixed-nav]
+  &.is-absolute
+    position absolute
+    bottom: 814px
+    +mq-pc-s()
+      bottom: 520px
+  &.is-fixed
+    position: fixed
+    bottom: 0
+
+.list--table__img,.list--table__img--secondary
+  transition-property: opacity
+  transition-duration: .3s
+  opacity: 0
+  &.is-show
+    opacity: 1
+  &.is-hidden
+    opacity: 0
+
+
+.wpcf7-not-valid-tip
+  &.is-hidden
+    display: none
+
+.remaining-number-counter
+  &.is-complete
+    background-color: #66cd66
+
+.remaining-number-counter__num,.remaining-number-counter__txt
+  &.is-complete
+    color: #ffffff
+
+[data-target-header-fixed]
+  position fixed
+  transition: .3s
+  &#headerSpMenu
+    width: 295px
+    z-index: 9999
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    visibility: hidden
+    &.is-open
+      visibility: visible
+
+  &.is-show
+    top 0px
+    display: block
+  &.is-hidden
+    top -100px
+    display: none

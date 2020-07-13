@@ -1,0 +1,149 @@
+.list--table
+dl.list--table
+  border-top none
+  border-bottom 1px solid c-light
+  margin 40px auto
+  dt
+  dd
+    background transparent
+.list--table__ttl
+  color #339cd1
+dt.list--table__ttl
+  background white
+  border none
+  clear both
+  float left
+  font-size 1.6rem
+  font-weight bold
+  padding 40px 30px 30px
+  width 240px
+.list--table__detail
+dd.list--table__detail
+  border-top 1px solid c-light
+  padding 30px 30px 30px 240px
+.form__required
+  color c-red
+.form__required--secondary
+  color #fff
+  background #f5a40f
+  font-size 1.3rem
+  padding 2px 5px
+  border-radius 5px
+  margin-left .5rem
+.form__txtArea
+.form__btnArea
+    text-align center
+    margin 0 0 40px
+.modal__content
+  .form__btnArea
+    text-align center
+    margin 40px 0 20px 0
+    +below(w-tab)
+      margin 10px 0 20px 0
+    button[type='submit']
+      padding 20px 40px
+      color #fff
+      line-height 1
+      font-size 1.5rem
+      font-weight bold
+      border #fff solid 3px
+      background-color #ff8a00
+      border-radius 30px
+      box-shadow:0px 5px 12px 0px rgba(0,0,0,0.18)
+      outline none
+      cursor pointer
+      display flex
+      align-items center
+      justify-content center
+      margin 0 auto
+      +below(w-tab)
+        padding 20px 10px
+        font-size 1.2rem
+        width 100%
+      &:after
+        content '（無料）'
+        font-size 1.2rem
+      svg
+        fill #fff
+        margin-right 1rem
+        +below(w-tab)
+          margin-right .5rem
+.form__txtArea
+  p
+    font-size 1.6rem
+    line-height 1.7
+    margin 40px 0
+.main__contents__form
+  .list--table
+    // width 80%
+    width 100%
+  .list--table__ttl
+    line-height 2
+.advertorialForm__kv
+  margin 0 0 80px
+.main__contents__advertorialForm__ttl
+  color c-brown
+  font-size 3.2rem
+  text-align center
+
++below(w-tab)
+  .list--table
+  dl.list--table
+    width 100%
+  .list--table__ttl
+  dt.list--table__ttl
+    border-top 1px solid c-light
+    float none
+    font-weight bold
+    padding 10px 30px 1px
+    width 100%
+  .list--table__detail
+  dd.list--table__detail
+    border-top none
+    padding 0 30px 20px
+  .main__contents__form
+    .list--table
+      width 100%
+  .advertorialForm__kv
+    margin 0 0 60px
+  .main__contents__advertorialForm__ttl
+    font-size 1.8rem
+    font-weight bold
+    line-height 1.4
+    span
+      display inline-block
+dl.list--table__secondary
+  display flex
+  align-items baseline
+  flex-wrap wrap
+  justify-content space-between
+  padding 20px
+  border-bottom 1px solid #dddddd
+  +below(w-tab)
+    padding 20px 0
+    border-bottom none
+dl.list--table__secondary:first-of-type
+  border-top 1px solid #dddddd
+  +below(w-tab)
+    border-top none
+dt.list--table__secondary__ttl
+  color c-key
+  font-size 1.6rem
+  font-weight bold
+  max-width 240px
+  width 100%
+  display flex
+  align-items center
+  +below(w-tab)
+    max-width 100%
+    margin-bottom 10px
+dd.list--table__secondary__detail
+  width calc(100% - 240px)
+  input.wpcf7-text
+    width 100%
+    background #f3f3f3
+    border-radius 5px
+    border none
+  +below(w-tab)
+    width 100%
+

@@ -1,0 +1,139 @@
+.main__contents__newArticleList
+  margin 20px 0 40px
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+.main__contents__newArticleList__ad
+  margin 0 0 40px
+  width 100%
+  & ins
+    margin: 6px 0 0
+.main__newArticleList__item
+  display flex
+  flex-direction column
+  align-items: stretch
+  margin-bottom 40px
+.main__newArticleList__item__col__big
+  flex 0 1 47%
+  .newArticleList__img
+    height 212px
+.main__newArticleList__item__col__small
+  flex 0 1 31%
+  .newArticleList__img
+    height 140px
+.newArticleList__ttl
+  font-size 1.8rem
+  font-weight bold
+  line-height 1.6
+  margin-top 20px
+.newArticleList__img
+  background-size cover
+  background-position center
+  background-repeat repeat
+  display inline-block
+  width 100%
+.newArticleList__cat
+.newArticleList__cat&:visited
+  background-color c-key
+  color #fff
+  font-size 1.1rem
+  float left
+  height 22px
+  padding 5px 10px
+  position relative
+  &:after
+    content ''
+    border-style solid
+    border-color transparent
+    border-width 22px 14px 0 0
+    border-top-color c-key
+    position absolute
+    right -14px
+    top 0
+.newArticleList__txtArea
+  width 100%
+  a
+    color c-txt
+    display flex
+    flex-direction column
+    justify-content space-between
+    width 100%
+    &:link,&:visited,&:active
+      color c-txt
+    &:hover
+      h3
+        text-decoration underline
+.newArticleList__txt
+  color c-medium
+  font-size 1.2rem
+.newArticleList__txt__excerpt
+  bottom 50px
+.newArticleList__txt__meta
+  display: flex
+  margin-top 20px
+  span
+    margin 0 10px 0 0
+.newArticleList__txt__meta__pr
+  font-size 1.1rem
+  background c-medium
+  color #fff
+  padding 2px
+.txt--noNewArticle
+  font-size 1.6rem
+  margin 20px 0 40px
+
+.newArticleList__section
+  height: 85px
+  background-color: #f3f3f3
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 15px
+  +mq()
+    justify-content: flex-end
+.newArticleList__section__ttl
+  color: #999999
+  font-size 1.4rem
+  width: 45%
+  +mq-s()
+    font-size: 1.2rem
+  +mq()
+    width: 25%
+.newArticleList__section__content
+  width: 55%
+  display: flex
+  justify-content: space-evenly
+  +mq()
+    width: 30%
+    justify-content: space-between
+.newArticleList__section__content__item
+  a,a&:visited
+    font-size 48px
+    height 48px
+    width 48px
+    +mq-s()
+      font-size 35px
+      height 35px
+      width 35px
+
+
++below(w-tab)
+  .main__newArticleList__item__col__big
+    flex 0 1 100%
+  .main__newArticleList__item__col__small
+    flex 0 1 47%
+  .newArticleList__ttl
+    font-size 1.6rem
+    line-height 1.5
+  .newArticleList__img
+    height 80px
+  .newArticleList__txt
+    font-size 1.1rem
+  .newArticleList__txt__meta
+    line-height 1.4
+    .item--sp
+      display inline
+  .main__contents__newArticleList__ad
+    & > ins
+      margin: 6px -30px 40px
+      width: auto !important

@@ -1,0 +1,47 @@
+.wpcf7
+  .c-select
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f3f3f3;
+    padding: 7px;
+    &.size-m
+      width 340px
+      +below(w-pc)
+        width 100%
+    &.size-s
+      width 30%
+    // &:before
+    //   position absolute
+    //   top 50%
+    //   transform translateY(-50%)
+    //   right 0.9em
+    //   width 0
+    //   height 0
+    //   padding 0
+    //   content ''
+    //   border-left 6px solid transparent
+    //   border-right 6px solid transparent
+    //   border-top 6px solid #666666
+    //   pointer-events none
+    select
+      width 100%
+      padding-right 1em
+      cursor pointer
+      text-indent 0.01px
+      text-overflow ellipsis
+      border none
+      outline none
+      background transparent
+      background url(../img/formitem/select_arrow.png) 0 0 no-repeat
+      background-size 19px 10px;
+      background-position right 20px center;
+      box-shadow none
+      // ブラウザ標準の矢印を消す
+      appearance: none
+      padding: 8px 38px 8px 8px
+      color: #666666
+      line-height 1
+      &::-ms-expand
+        display: none
+

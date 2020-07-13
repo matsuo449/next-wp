@@ -1,0 +1,378 @@
+.kv-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 15px 0
+  margin: 0 -25px
+  background-color: #a8e243
+  +mq-pc-s()
+    margin: 102px -25px 0
+  +mq-pc-l()
+    margin: 0 0
+    padding: 0
+
+.kv-content
+  width: 90%
+  max-width 450px
+  color: #333333
+  +mq-pc-l()
+    height 470px
+    max-width: 1300px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 20px
+    padding-left: 0
+    padding-right: 0
+    position: relative
+
+.kv-content__first
+  +mq-pc-l()
+    height: 450px
+    display: flex
+    align-items: flex-end
+    display: flex
+
+.kv-content__intro
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 40px
+  background-color: #333333
+  color: #ffffff
+  fill: #ffffff
+  +mq-pc-l()
+    width: 270px
+.kv-content__second
+  +mq-pc-l()
+    display: flex
+    flex-direction: column
+    height: 450px
+    justify-content: space-between
+    align-items: flex-start
+.kv-content__second__img
+  +mq-pc-l()
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    width: 100%
+    height: 88px
+.kv-content__second__img__example
+  +mq-pc-l()
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 250px
+    height: 32px
+    background-color: #ff8b00
+    color: #ffffff
+    fill: #ffffff
+    padding: 0 10px
+
+.kv-content__second__img__example__txt
+  white-space: nowrap
+  +mq-pc-l()
+    font-size: 14px
+
+.kv-content__second__img__img
+  +mq-pc-l()
+    max-width 200px
+    width: 100%
+    height: 100px
+
+
+.kv-content__third
+  display: block
+  position: relative
+  +mq-pc-l()
+    display: none
+
+.kv-content__intro--secondary
+  @extend .kv-content__intro
+  width: 285px
+  margin: auto
+  position: relative
+  padding-top: 10px
+  +mq-pc-l()
+    width: 120px
+    height: 300px
+    margin: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: baseline
+    padding-left: 40px
+
+
+.kv-content__intro__svg
+  position: absolute
+  right: 25px
+  top: 8px
+  +mq-pc-l()
+    right: 0px
+    top: 155px
+
+.kv-content__arrow
+  width: 0
+  height: 0
+  border-left: 142.5px solid transparent
+  border-right: 142.5px solid transparent
+  border-top: 20px solid #333333
+  margin: auto
+  +mq-pc-l()
+    border-top: 150px solid transparent
+    border-bottom: 150px solid transparent
+    border-left: 30px solid #333
+    border-right: 0px
+    margin: 0
+.kv-content__arrow--secondary
+  +mq-pc-l()
+    border-top: 150px solid transparent
+    border-bottom: 150px solid transparent
+    border-left: 30px solid #a8e243
+    position: absolute
+    z-index: 1
+.kv-content__third__img
+  position: absolute
+  top: -65px
+  right: -10px
+
+.kv-content__txt
+  text-align: center
+  font-weight: bold
+  letter-spacing: 1px
+  font-size: 18px
+  +mq-pc-l()
+    font-size: 28px
+  +mq-s()
+    letter-spacing: 0.5px
+    font-size: 16px
+
+.kv-content__txt--secondary
+  letter-spacing: 1px
+  font-size: 15px
+  line-height: 1.25
+  text-align: center
+  +mq-pc-l()
+    text-align: left
+    font-size: 20px
+  +mq-s()
+    letter-spacing: 0.5px
+    font-size: 13px
+
+.kv-content__txt--orange
+  color: #ff8b00
+
+.kv-content__main
+  display: flex
+  justify-content: center
+  align-items: baseline
+  height: 45px
+  background-color: #ffffff
+  color: #333333
+  font-weight: bold
+  letter-spacing: 3.08px
+  padding-top: 5px
+  +mq-s()
+    padding-top: 9px
+  +mq-pc-l()
+    padding: 7px 5px 0
+    height: 65px
+
+.kv-content__main__txt
+  white-space: nowrap
+  font-size: 33px
+  +mq-s()
+    font-size: 25px
+  +mq-pc-l()
+    font-size: 50px
+
+.kv-content__main__txt--secondary
+  white-space: nowrap
+  font-size:29px
+  +mq-s()
+    font-size: 22px
+  +mq-pc-l()
+    font-size: 45px
+
+
+.kv-content__main--primary
+  @extend .kv-content__main
+  width: 165px
+  margin: auto
+  +mq-pc-l()
+    width: auto
+    margin: 0
+
+.kv-content__main--secondary
+  @extend .kv-content__main
+  +mq-pc-l()
+    width: auto
+    margin: 0
+
+.kv-content__box
+  position relative
+  +mq-pc-l()
+    box-shadow: 0 0 8px gray
+.kv-content__box__top
+  display: flex
+  justify-content: center
+  align-items: center
+  height 40px
+  background-color: #333333
+  color: #ffffff
+  border-radius: 10px 10px 0 0
+  +mq-pc-l()
+    border-radius: 0
+.kv-content__box__bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 90px
+  background-color: #ffffff
+  border-radius: 0 0 10px 10px
+  +mq-pc-l()
+    border-radius: 0
+
+.kv-content__box__bottom__btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 90%
+  height: 60px
+  border-radius: 30px
+  border: solid 4px #ffffff
+  background-image: linear-gradient(to left, #ff9307, #fd3737)
+  color: #ffffff
+  fill: #ffffff
+
+.kv-content__fifth
+  +mq-pc-l()
+    height: 450px
+    display: flex
+    align-items: flex-end
+
+
+// kv下のForm用
+.kv-content__box__form
+  background-color: #ffffff
+  width: 500px
+  .list--table__secondary
+    border-bottom none
+    display flex
+    flex-direction row
+    align-items baseline
+    flex-wrap wrap
+    justify-content space-between
+    padding: 10px 20px 0
+    border-bottom none
+    +below(w-tab)
+      border-bottom none
+  .list--table__secondary:first-of-type
+    border-top none
+    +below(w-tab)
+      padding 20px 0
+      border-bottom none
+      display flex
+      flex-direction: column
+      align-items center
+      flex-wrap wrap
+      justify-content space-between
+      padding 0px
+      border-bottom none
+  .list--table__secondary__ttl
+    width: 150px
+    display: flex
+    justify-content: space-between
+    margin-right: 30px
+    color #333333
+    font-size 14px
+  .list--table__secondary__detail
+    width: calc(100% - 180px)
+    margin-top 10px
+  .modalform__txt
+    margin-top 10px
+    padding: 0 20px
+    text-align left
+    font-size 10px
+    color: #666666
+  .modalform__txt--annotation
+    text-align left
+    white-space nowrap
+    font-size 14px
+    color #666
+  .form__btnArea
+    margin: 0
+    padding-bottom: 10px
+  .wpcf7-form-control.ga--event
+    display: flex
+    width: 90%
+    height: 60px
+    color: #fff
+    border: solid 4px #fff
+    outline: none
+    border-radius: 30px
+    background-image: -webkit-gradient(linear, right top, left top, from(#ff9307), to(#fd3737))
+    background-image: linear-gradient(to left, #ff9307, #fd3737)
+    justify-content: center
+    align-items: center
+    fill: #fff
+    margin: 5px 20px 0
+    font-size: 16px
+  .modalform__txt
+    line-height: 1.5
+  .wpcf7-not-valid-tip
+    font-size: 10px
+  .wpcf7-response-output
+    margin: 0
+    font-size: 10px
+
+.kv-content--secondary
+  display: flex
+  justify-content: flex-end
+.kv-content--secondary__icon
+  display: none
+  +mq-pc-l()
+    height: 40px
+    background-color: #ffffff
+    display: flex
+    justify-content: space-between
+    padding-top: 5px
+    width: 60%;
+    max-width: 769px
+
+
+.kv-content--secondary__icon__img
+  max-width: 100px
+  width: 100%
+  height: auto
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: contain
+
+.kv-content--secondary__empty
+  +mq-pc-l()
+    width: 37%
+
+// IE対応
+@media all and (-ms-high-contrast: none)
+  .kv-content__intro__svg
+    right: -20px
+
+  .kv-content__main__txt
+    font-size: 33px
+    +mq-s()
+      font-size: 25px
+    +mq-pc-l()
+      font-size: 40px
+
+  .kv-content__main__txt--secondary
+    font-size:29px
+    +mq-s()
+      font-size: 22px
+    +mq-pc-l()
+      font-size: 35px
+  .kv-content
+    padding-left: 0
+    padding-right: 0

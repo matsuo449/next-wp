@@ -1,0 +1,460 @@
+#flow
+
+  .breadcrumb
+    margin 0
+
+.flow__kv
+  margin: 0 -25px
+  text-align center
+  +mq-pc-l()
+    margin: 0
+
+.flow__content__inner
+  width 100%
+  overflow hidden
+  margin 0px auto 100px
+  line-height 1.5
+  +mq()
+    max-width 1100px
+    margin-top 50px
+
+.flow__contents
+  width 100%
+  +mq()
+    width 80%
+    position relative
+    margin-left 19%
+    &:before
+      content ""
+      position absolute
+      width 4px
+      background-color #349DD2
+      margin auto
+      z-index -1
+      left -100px
+      min-height 100%
+
+.flow__inner
+  padding 60px 15px
+  +mq()
+    padding 0
+
+.flow__box
+  font-size 22px
+  font-weight bold
+  color #fff
+  padding 13px 0
+  background #3EA1D3
+  text-align center
+  +mq()
+    display none
+
+.flow__period--sp
+  font-size 20px
+  font-weight bold
+  color #3EA1D3
+  text-align center
+  padding 10px 0
+  +mq()
+    display none
+
+.flow__line
+  width 4px
+  background-color #349DD2
+  margin auto
+
+.flow__line--sp
+  @extend .flow__line
+  height 40px
+  +mq()
+    display none
+
+.flow__line--pc__mark
+  position absolute
+  height 20px
+  width 20px
+  border-radius 50%
+  background-color #349DD2
+  left -8px
+
+.flow__period__box
+  position absolute
+  font-size 18px
+  font-weight bold
+  text-align center
+  color #fff
+  background #349DD2
+  border-radius 50%
+  height 100px
+  width 100px
+  display flex
+  align-items center
+  justify-content center
+  margin auto
+  left -150px
+
+.flow__period__box--top
+  @extend .flow__period__box
+  top 0
+
+.flow__period__box--bottom
+  @extend .flow__period__box
+  bottom 0
+  padding-top 10px
+
+.flow__step
+  position relative
+  box-shadow 0 0 12px rgba(0,0,0,.2)
+  +mq()
+    border-top none
+    border-radius 20px
+    padding 41px 60px 60px
+    margin-top 10px
+    margin-bottom 80px
+    &:before
+      content ""
+      position absolute
+      height 50px
+      width 50px
+      background-color #fff
+      left -23px
+      transform rotate(135deg) skew(-15deg, -15deg)
+      box-shadow 5px 5px 5px rgba(0, 0, 0, .05)
+      top 50%
+    &:after
+      content ""
+      position absolute
+      height 20px
+      width 20px
+      border-radius 50%
+      background-color #349DD2
+      left -108px
+      top calc(50% + 17px)
+
+.flow__period__txt
+  display none
+  +mq()
+    display block
+    font-size 18px
+    font-weight bold
+    position absolute
+    padding 10px 0
+    color #3ea1d3
+    background #fff
+    left -144px
+    bottom -60px
+
+.flow__step__inner
+  padding 60px 15px 50px
+  border-top solid 10px #3EA1D3
+  +mq()
+    border-top none
+    padding 0
+
+.flow__step__title
+  font-size 28px
+  font-weight bold
+  +mq()
+    font-size 32px
+    display flex
+
+.flow__step__kv
+  padding 40px 0 30px
+  +mq()
+    padding 30px 0 40px
+
+.flow__step__title__step
+  display flex
+  align-items center
+
+.flow__step__title__step__logo
+  padding-right 10px
+  fill #3EA1D3
+
+.flow__step__title--sp
+  color #3EA1D3
+  padding-bottom 5px
+  display inline-block
+  +mq()
+    display inline-block
+    padding-right 30px
+
+.flow__step__desc
+  font-size 18px
+  line-height 1.9
+  +mq()
+    font-size 18px
+  span
+    font-weight bold
+
+.flow__step__point
+  background 	#EBF8FF
+  border solid 1px #339CD1
+  border-radius 10px
+  margin 40px 0
+  padding 20px 0
+  padding-left 45px
+
+  +mq()
+    display flex
+    justify-content center
+    text-align center
+    padding-left 20px
+
+.flow__step__point__item
+  font-size 20px
+  font-weight bold
+  color #339CD1
+  list-style disc
+  padding 5px 0
+  +mq-pc-s()
+    &:not(:last-child)
+      padding-right 40px
+  +mq-pc-l()
+    &:not(:last-child)
+      padding-right 60px
+
+
+.flow__step__time
+  background #F3F3F3
+  padding 25px 0 30px 0
+  margin 40px 0 50px
+  text-align center
+  letter-spacing 0.05em
+
+  +mq()
+    display flex
+    align-items center
+    padding 23px 0
+    margin 40px 0 60px
+
+.flow__step__time__q
+  display flex
+  justify-content center
+  align-content center
+  color #3EA1D3
+  padding-bottom 15px
+  +mq()
+    font-size 20px
+    padding 8px 0 0 10px
+    width 40%
+
+.flow__step__time__q__logo
+  fill #3EA1D3
+  padding-right 12px
+
+.flow__step__time__q__txt
+  font-size 16px
+  font-weight bold
+  +mq()
+    font-size 19px
+
+.flow__step__time__a
+  font-size 22px
+  font-weight bold
+  +mq()
+    font-size 24px
+    margin-left 50px
+
+.flow__step__important__title
+  font-size 24px
+  font-weight bold
+  border-left solid 5px #3EA1D3
+  padding 0 0 5px 10px
+  margin-bottom 7px
+  +mq()
+    font-size 22px
+
+
+.flow__step__important__border
+  border-top solid 1px #ccc
+  padding-bottom 10px
+
+.flow__step__important__txt
+  font-size 16px
+  line-height 1.9
+  span
+    font-weight bold
+
+.flow__step__important__item
+  padding-top 40px
+
+.flow__step__important__item__head
+  font-size 20px
+  font-weight bold
+  color #339CD1
+  padding-bottom 15px
+  text-indent -1.3em
+  padding-left 1.3em
+
+.flow__step__important__item__txt
+  font-size 16px
+  line-height 1.9
+  +mq()
+    font-size 16px
+  span
+    font-weight bold
+
+.flow__step__consult
+  background #FEFAE8
+  border solid 1px #509BCC
+  border-radius 10px
+  margin-top 50px
+  a:visited
+    color #fff
+
+  +mq()
+    text-align center
+    margin-top 40px
+
+.flow__step__consult__inner
+  padding 40px 20px
+  +mq()
+    padding 40px
+
+  img
+    padding 20px 0 30px
+    +mq()
+      padding 20px 0 10px
+
+.flow__step__consult__head
+  font-size 20px
+  font-weight bold
+  color #3EA1D3
+  text-align center
+  padding-bottom 20px
+
+  +mq()
+    font-size 28px
+    padding-bottom 14px
+
+.flow__step__consult__txt
+  font-size 16px
+  line-height 1.9
+  +mq()
+    font-size 18px
+
+.flow__step__consult__txt--sp
+  font-size 16px
+  line-height 1.9
+  +mq()
+    display none
+
+.flow__step__consult__txt--pc
+  display none
+  +mq()
+    display block
+    font-size 19px
+    line-height 1.9
+
+.flow__step__consult__img
+  text-align center
+
+.flow__step__consult__btn--sp
+  display block
+  font-size 18px
+  font-weight bold
+  text-align center
+  padding 15px 0
+  margin-bottom 37px
+  color #ffffff
+  background #F18F35
+  border-radius 8px
+  box-shadow 0px 6px 0 #CF7B2C
+  cursor: pointer
+  &:before
+    font-family icomoon
+    font-size 20px
+    display inline-block
+    margin-right 10px
+    color #fff
+    flex 0 1 auto
+    content '\e900'
+
+  +mq()
+    display none
+
+.flow__step__consult__btn--pc
+
+  display none
+
+  &:before
+    font-family icomoon
+    font-size 20px
+    display inline-block
+    margin-right 10px
+    color #fff
+    flex 0 1 auto
+    content '\e900'
+
+  +mq()
+    display block
+    font-size 20px
+    font-weight bold
+    text-align center
+    padding 20px 0
+    margin 20px auto 40px
+    color #ffffff
+    background #F18F35
+    border-radius 8px
+    box-shadow 0px 6px 0 #CF7B2C
+    width 70%
+
+.flow__step__consult__border
+  border-top solid 1px #ccc
+  padding-bottom 20px
+  +mq()
+    padding-bottom 30px
+
+.flow__step__consult__call
+  +mq()
+    display flex
+    justify-content center
+    align-items center
+    padding-top 15px
+
+.flow__step__consult__call__btn
+  font-size 22px
+  font-weight bold
+  text-align center
+  padding 15px 0
+  margin 20px 0
+  color #333
+  background #fff
+  border-radius 8px
+  box-shadow 0px 6px 0 #CCC
+  &:before
+    font-family icomoon
+    font-size 23px
+    display inline-block
+    margin-right 10px
+    color #fff
+    content '\e901'
+    color #339cd1
+    +mq()
+      font-size 30px
+  +mq()
+    font-size 35px
+    background none
+    margin 0
+    padding 0
+    box-shadow none
+    padding-right 20px
+
+.flow__step__consult__call__time
+  font-size 12px
+  text-align left
+  +mq()
+    font-size 14px
+  span
+    font-size 10px
+    +mq()
+      font-size 12px
+
+.flow__step__downloadImg
+  display block
+  margin-top 40px
+  text-align center
+
+
+

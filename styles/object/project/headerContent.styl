@@ -1,0 +1,407 @@
+.navMenu__inner
+  position relative
+  width 100%
+  margin 0 auto
+.navMenu--lp .navMenu__inner
+  @extend .navMenu__inner
+  display flex
+  justify-content space-between
+  +below(w-pc)
+    padding 0 15px
+
+.header__logo
+  +mq-pc-l()
+    display none
+
+.header__logo, .header__logo--nav
+  font-size 1.1rem
+  text-align center
+  padding 20px 0 15px
+  a,a&:visited
+    color c-txt
+  img
+    margin 0 0 5px
+    width 175px
+.header__logo--txt
+  font-size 2.8rem
+  font-weight bold
+  line-height 1.4
+.header__logo__discription
+  display none
+  width calc(100% - 165px)
+  margin-left 10px
+  text-align left
+  font-size 1.1rem
+  line-height 1.4
+  +mq-pc-l()
+    display inline-block
+.header__lpMeta--pc
+  display flex
+  justify-content space-between
+  align-items center
+  +below(w-pc)
+    display none
+.header__lpMeta--sp
+  display none
+  +below(w-pc)
+    display flex
+    width 100px
+    align-items center
+    justify-content space-between
+.header__lpMeta__telArea
+  font-size 3rem
+  font-weight bold
+  margin-right 30px
+  +below(w-pc)
+    font-size 1rem
+    margin-right 0
+//menu
+.header__menu
+  position absolute
+  top 25px
+  left 0
+.header__menu__btn
+  color c-key
+  font-size 3rem
+  &:before
+    font-family 'icomoon' !important
+    speak none
+    font-style normal
+    font-weight normal
+    font-variant normal
+    text-transform none
+    line-height 1
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+.header__menu__btn--sp
+  display none
+.header__menu--sp
+  display none
+
+
+.navMenu
+  display: none
+  +mq-pc-l()
+    display: flex
+    background-color c-xx-light
+  &__inner
+    max-width w-pc
+    width: 100%
+    margin 0 auto
+    position relative
+.navMenuList
+  display: none
+  +mq-pc-l()
+    display flex
+    justify-content center
+  &__item
+    position relative
+    &:before
+      content: ''
+      position: absolute
+      display: inline-block
+      top: 25%
+      left: 100%
+      -webkit-transform: translateX(-50%)
+      transform: translateX(-50%)
+      width: 1px
+      height: 50px
+      background-color: #cccccc
+      border-radius: 2px
+    &:last-child::before
+      display: none
+.header__logo--nav,
+.search__area--nav
+  display none
+
+.header__logo--nav
+  +mq-pc-xs()
+    width 20%
+.header--lp .header__logo--nav
+  display flex
+  align-items center
+  padding 0
+  a
+    display block
+    width 175px
+  img
+    margin 0
+  +below(w-pc)
+    width calc(100% - 100px)
+
+header
+  .navMenu
+    background-color #ffffff
+    border-bottom 1px solid c-light
+    &__inner
+      display flex
+      justify-content space-between
+      align-items center
+
+  .navMenuItem
+    padding-left 15px
+    padding-right 15px
+    +mq-pc-s()
+      padding-left 10px
+      padding-right 10px
+
+  .header__logo--nav,
+  .search__area--nav
+    display block
+  &.header--lp
+    .header__logo--nav
+      display flex;
+
+.navMenuItem
+  display block
+  padding 15px 45px
+  cursor pointer
+  transition none
+  fill #3a9dcf
+  &:hover
+    background-color #dfedf5
+  svg
+    display block
+    margin 0 auto
+  &__txt
+    display block
+    margin-top 6px
+    text-align center
+    color c-txt
+    font-weight bold
+    line-height 1.25
+    +mq-pc-s()
+      font-size 13px
+    +mq-pc-xs()
+      font-size 11px
+
+.navMenuItem:nth-child(3)
+  display: none
+// PC submenu list
+.header__menu__list__subMenu
+  background-color c-key
+  padding 10px
+  width 207px
+  position absolute
+  // top 80px
+  left -50%
+  right -50%
+  margin 0 auto
+  &:before
+    content ''
+    display block
+    width 0
+    height 0
+    border-style solid
+    border-color transparent transparent c-key transparent
+    border-width 0 7.5px 10px 7.5px
+    position absolute
+    left -50%
+    right -50%
+    margin 0 auto
+    top -10px
+
+.subMenu__item__link
+  display block
+  padding 15px 5px 15px 15px
+  color #fff
+  font-size 1.2rem
+  font-weight bold
+  &:hover
+    opacity 1
+    border-radius 5px
+    color c-key
+    background-color #fff
+    //& > span
+    //  color c-key
+  &:visited
+    color #fff
+    &:hover
+      color c-key
+  & > span
+    display inline-block
+    margin-left 4px
+    font-size 1.4rem
+
+//search
+.search__area
+  // position absolute
+  // right 0px
+  // top 30px
+  label
+    display none
+
+.search__area--secondary
+  @extend .search__area
+  label
+    display none
+  .search__form
+    max-width 290px
+.search__area--sp-menu
+  position absolute
+  top 35px
+  right 25px
+  label
+    display none
+  .search__form
+    max-width 290px
+.search__area--nav
+  label
+    display none
+.search__form
+  background c-x-light
+  border-radius 16px
+  position relative
+  height 32px
+  max-width 200px
+#search__txtArea,
+#search__txtArea--sideMenu,
+#search__txtArea--sidePc
+  background transparent
+  border none
+  font-size 1.4rem
+  height 32px
+  line-height 32px
+  padding 0 30px 0 20px
+.search__submit
+  background transparent
+  border none
+  cursor pointer
+  color c-key
+  font-size 2.1rem
+  position absolute
+  top 0
+  right 5px
+  height 32px
+
+// 未満指定
++below(w-pc)
+  .header__menu__btn--pc,
+    display none
+  .header__menu__btn--sp
+    transition all .3s ease
+    display inline-block
+    position absolute
+    top 22px
+    left 10px
+    z-index 300
+    &-top
+      @extend .header__menu__btn--sp
+      top 45px
+      visibility: visible
+  .header__menu--sp
+    background #ffffff
+    display block
+    transition all .3s ease
+    padding 80px 0 0
+    z-index 200
+    &-top
+      @extend .header__menu--sp
+      padding 102px 0 0
+
+  // sp menu
+  .spMenuLink
+    display block
+    background #ffffff
+    padding 19px 22px
+    color c-key
+    position relative
+    span
+      color c-txt
+      font-weight bold
+    &:before
+      font-size 1.2rem
+      height 1em
+      position absolute
+      top -50%
+      bottom -50%
+      right 22px
+      margin auto 0
+    &:hover,&:visited
+      color c-key
+  .spMenuLink--secondary
+    display block
+    background #dfedf5
+    padding 19px 20px
+    color c-key
+    position relative
+    span
+      color c-txt
+      font-weight bold
+    &:before
+      font-size 1.2rem
+      margin 0 0.25em 0 0
+    &:hover,&:visited
+      color c-key
+
+  .spMenuLink--toggle
+    @extends .spMenuLink
+    &:before
+      transform rotate(90deg)
+    &.is-open
+      &:before
+        transform rotate(-90deg)
+
+  .menu--sp__toggleList
+    &__item
+      border-top 1px solid #ffffff
+      &:first-of-type
+        border-top-color #e0e0e0
+
+  .menu--sp__list__item
+    border-bottom 1px #e0e0e0 solid
+    &:first-of-type
+      border-top 1px #e0e0e0 solid
+
+  // SPナビ下部
+  .menu--sp__bottom
+    padding 20px
+  .menu--sp__bnrlists
+    margin-bottom 20px
+    border-bottom 1px solid #E0E0E0
+    &:last-child
+      margin-bottom 0
+      border-bottom none
+  .menu--sp__bnrlists__item
+    margin-bottom 20px
+    a
+      display block
+  .header__menu__ttl
+    border-top 1px solid c-light
+    border-bottom none
+    padding 20px 10px
+  .header__search__btn
+    position absolute
+    top 22px
+    right 10px
+    z-index 200
+    color c-key
+    font-size 3rem
+    &-top
+      @extend .header__search__btn
+      top 45px
+  .header__searchBox
+    position absolute
+    top 16px
+    right 10px
+    &-top
+      @extend .header__searchBox
+      top 35px
+  .search__area
+    position relative
+    top 0
+  .search__form
+    border-radius 24px
+    height 48px
+    max-width 290px
+    margin auto
+  #search__txtArea,
+  #search__txtArea--sideMenu,
+  #search__txtArea--sidePc
+    height 48px
+    line-height 48px
+  .search__submit
+    font-size 2.4rem
+    height 48px
+  .content__overlay
+    transition all .3s ease
