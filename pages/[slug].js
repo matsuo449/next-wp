@@ -3,6 +3,7 @@ import Link from 'next/link'
 import wp from '../config'
 
 export default ({post}) => {
+  
   return (
     <div>
       <h1>Hello</h1>

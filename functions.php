@@ -42,3 +42,4 @@ function rest_api_add_image($object, $field_name, $request) {
         'height' => $feat_img_array[2],
     ];
 }
+

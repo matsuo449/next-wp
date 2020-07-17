@@ -1,39 +1,32 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import '../styles/style.styl'
 import wp from '../config';
 
 const Home = (props) => {
   const { posts,test } = props
-
-  console.log(test);
-
-  // console.log(posts[0]);
-  
+  console.log(posts);
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className="test">
-          新着記事
-        </h1>
-        <ul>
-          {posts.map(post => (
-            <li key={post.id}>
-              <img src={`${post.featured_image.src}`}/>
-              <Link href="/[slug]" as={`/${post.slug}`}>
-                <a>
-                  {post.title.rendered}
-                </a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </main>
+    <div className="content">
+      <h1 className="test">
+        新着記事
+      </h1>
+      <ul>
+        {posts.map(post => (
+          <li key={post.id}>
+            <img src={`${post.featured_image.src}`}/>
+            <Link href="/[slug]" as={`/${post.slug}`}>
+              <a>
+                {post.title.rendered}
+              </a>
+            </Link>
+            <Link href="/category/[id]" as={`category/${post.categories}`}>
+              <a>
+                {post.categories}
+              </a>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
