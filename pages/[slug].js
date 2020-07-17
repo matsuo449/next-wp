@@ -5,7 +5,7 @@ import wp from '../config'
 export default ({post}) => {
   
   return (
-    <div>
+    <div className="content">
       <h1>Hello</h1>
       <h2>{post.title.rendered}</h2>
       {post.slug}
