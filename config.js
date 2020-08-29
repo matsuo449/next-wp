@@ -6,6 +6,7 @@ const Config = {
   apiUrl: wpUrl,
 };
 
-const wp = new WPAPI({ endpoint: Config.apiUrl });
+//著者名
+export const author = `${wpUrl}/wp/v2/posts?_embed`
 
-export default wp;
+export const wp = new WPAPI({ endpoint: Config.apiUrl });

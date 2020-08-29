@@ -1,9 +1,8 @@
 // import axios from 'axios'
 import Link from 'next/link'
-import wp from '../config'
+import {wp} from '../config'
 
 export default ({post}) => {
-  
   return (
     <div className="content">
       <h1>Hello</h1>

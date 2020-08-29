@@ -4098,13 +4098,11 @@ header.header--lp .header__logo--nav
 {
     background-color: #dfedf5;
 }
-.navMenuItem img
+.navMenuItem svg
 {
     display: block;
+
     margin: 0 auto;
-    color: #3a9dcf;
-    width: 30px;
-    height: 30px;
 }
 .navMenuItem__txt
 {
@@ -25755,3 +25753,5 @@ input[type='submit'].is-disabled:hover
                 transform: translate3d(0, -100%, 0);
     }
 }
+
+
