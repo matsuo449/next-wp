@@ -1,17 +1,14 @@
 // import axios from 'axios'
 import Link from 'next/link'
-import {wp} from '../config'
+import { wp } from '../config'
 
-export default ({post}) => {
+export default ({ post }) => {
   return (
     <div className="content">
-      <h1>Hello</h1>
-      <h2>{post.title.rendered}</h2>
+      <h1>{post.title.rendered}</h1>
       {post.slug}
       <Link href="/">
-        <a>
-          Back
-        </a>
+        <a>Back</a>
       </Link>
     </div>
   )
@@ -22,23 +19,22 @@ export default ({post}) => {
 export const getStaticPaths = async () => {
   const posts = await wp.posts()
   return {
-      paths: posts.map(post => ({
-          params: {
-              slug: post.slug
-          }
-      })),
-      fallback: false
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
+    fallback: false,
   }
 }
 
 // (2) 実際にSSGする関数
 // paramsには上記pathsで指定した値が入る（全件ではなく1postずつ）
-export const getStaticProps = async ({params}) => {
+export const getStaticProps = async ({ params }) => {
   const posts = await wp.posts().slug(params.slug)
   return {
-      props: {
-          post: posts[0]
-      }
+    props: {
+      post: posts[0],
+    },
   }
 }
-

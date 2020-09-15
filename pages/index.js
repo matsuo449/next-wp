@@ -38,13 +38,120 @@ const Home = (props) => {
             ))}
           </ul>
         </div>
+
+        <aside class="side__contents side__contents--top">
+          <div class="search__area item--sp u-mb--xxl-sp"></div>
+          <section class="side__section">
+            <ul class="side__section__bnrList">
+              <li class="side__section__bnrList__item">
+                <a
+                  data-micromodal-trigger="modal-2"
+                  data-vars-click-id="link--cv--side--bnr-download"
+                  id="bnr--download"
+                  class="ga--event"
+                >
+                  <img
+                    src="https://ict-kids.com/wp/wp-content/themes/ictkids/img/common/bnr_dl.jpg"
+                    alt="保育ICTシステム比較資料ダウンロード"
+                    loading="lazy"
+                    class="lazyload"
+                  />
+                </a>
+              </li>
+              <li class="side__section__bnrList__item">
+                <a
+                  href="/concierge/?formId=c"
+                  id="bnr--concierge-c"
+                  data-vars-click-id="link--cv--side-c"
+                  class="ga--event"
+                >
+                  <img
+                    src="https://ict-kids.com/wp/wp-content/themes/ictkids/img/common/bnr-concierge_c.jpg"
+                    alt="保育園ICTシステム探しをお手伝い！相談無料 ICTキッズコンシェルジュ"
+                    loading="lazy"
+                    class="lazyload"
+                  />
+                </a>
+              </li>
+              <li class="side__section__bnrList__item">
+                <a
+                  href="/concierge/?formId=c"
+                  id="bnr--concierge-e"
+                  data-vars-click-id="link--cv--side-e"
+                  class="ga--event"
+                >
+                  <img
+                    src="https://ict-kids.com/wp/wp-content/themes/ictkids/img/common/bnr-concierge_e.jpg"
+                    alt="保育園ICTシステム探しをお手伝い！相談無料 ICTキッズコンシェルジュ"
+                    loading="lazy"
+                    class="lazyload"
+                  />
+                </a>
+              </li>
+              <li class="side__section__bnrList__item">
+                <a
+                  href="/compare"
+                  data-vars-click-id="link--cv--compare"
+                  class="ga--event"
+                >
+                  <img
+                    src="https://ict-kids.com/wp/wp-content/themes/ictkids/img/common/bnr-compare-pc.jpg"
+                    alt="ICTシステム徹底比較 色んなシステムあるけど、どう違うの？"
+                    loading="lazy"
+                    class="lazyload"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+          <form role="search" action="/" method="get" class="search__form">
+            <fieldset>
+              <input
+                type="text"
+                name="s"
+                value=""
+                placeholder="キーワード検索"
+                id="search__txtArea--sideMenu"
+              />
+              <button class="search__submit"></button>
+            </fieldset>
+          </form>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>
+                Your Name: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email: <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Role:{' '}
+                <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name="message"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </aside>
       </div>
     </div>
   )
 }
 
 export const getStaticProps = async () => {
-  // console.log(author);
   const test2 = await fetch(author)
   const data = await test2.json()
   console.log(data)
